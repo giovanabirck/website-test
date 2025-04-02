@@ -24,7 +24,7 @@ h1 {
 
 .option {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content:space-around;
   margin-left: 10vw;
   margin-right: 10vw;
