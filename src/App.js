@@ -54,6 +54,13 @@ const visualArtImages = [
   "/visual_art/image10.jpg",
 ];
 
+const categories = [
+  { name: "Product Design", images: productDesignImages },
+  { name: "Graphic Design", images: graphicDesignImages },
+  { name: "Spatial Design", images: spatialDesignImages },
+  { name: "Visual Art", images: visualArtImages },
+];
+
 function getRandomPosition() {
   const x = Math.random() * 300;
   const y = Math.random() * 300;
@@ -64,40 +71,24 @@ function App() {
 
   const [hovered, setHovered] = useState(false);
   const [visibleImages, setVisibleImages] = useState([]);
-  const timeoutsRef = useRef([]);
+  // const timeoutsRef = useRef([]);
 
-  const handleHover = (category) => {
-    setHovered(category);
-  };
+  // const handleHover = (category) => {
+  //   setHovered(category);
+  // };
 
   useEffect(() => {
-    timeoutsRef.current.forEach(clearTimeout);
-    timeoutsRef.current = [];
-
-    if (hovered) {
+    if (hoveredCategory) {
       setVisibleImages([]);
-
-      const imagesToShow =
-        hovered === "productDesign"
-          ? productDesignImages
-          : hovered === "graphicDesign"
-          ? graphicDesignImages
-          : hovered === "spatialDesign"
-          ? spatialDesignImages
-          : visualArtImages;
-
-        imagesToShow.forEach((image, index) => {
-          const timeout = setTimeout(() => {
-            setVisibleImages((prev) => [
-              ...prev,
-              { src: image, position: getRandomPosition() },
-            ]);
-          }, index * 300);
-          timeoutsRef.current.push(timeout);
-        });
-      } else { setVisibleImages([]); }
-    }, [hovered]
-  );
+      hoveredCategory.images.forEach((image, index) => {
+        setTimeout(() => {
+          setVisibleImages((prev) => [...prev, { src: image, position: getRandomPosition() }]);
+        }, index * 300);
+      });
+    } else {
+      setVisibleImages([]);
+    }
+  }, [hoveredCategory]);
 
 
   return (
@@ -106,7 +97,34 @@ function App() {
         <h1>Giovana Birck</h1>
       </div>
 
-      <div className='option'>
+    <div className="option">
+      {categories.map((category) => (
+        <h2
+          key={category.name}
+          onMouseEnter={() => setHoveredCategory(category)}
+          onMouseLeave={() => setHoveredCategory(null)}
+          className={hoveredCategory && hoveredCategory.name !== category.name ? "faded" : ""}
+        >
+          {category.name}
+        </h2>
+      ))}
+    </div>
+
+    {hoveredCategory && (
+      <div className="image-gallery">
+        {visibleImages.map((img, index) => (
+          <img
+            key={index}
+            src={img.src}
+            alt="popup"
+            className="popup-image"
+            style={{ position: "absolute", left: `${img.position.x}px`, top: `${img.position.y}px` }}
+          />
+        ))}
+      </div>
+    )}
+
+      {/* <div className='option'>
 
         <div className='productDesignOption'>
           <h2 
@@ -116,7 +134,7 @@ function App() {
             Product Design
           </h2>
 
-          {/* {hovered === "productDesign" && (
+          {hovered === "productDesign" && (
             <div className="image-gallery">
               {visibleImages.map((img, index) => (
                 <img
@@ -128,7 +146,7 @@ function App() {
                 />
               ))}
             </div>
-          )} */}
+          )}
         </div>
 
         <div className='graphicDesignOption'>
@@ -139,7 +157,7 @@ function App() {
             Graphic Design
           </h2>
 
-          {/* {hovered === "graphicDesign" && (
+          {hovered === "graphicDesign" && (
             <div className="image-gallery">
               {visibleImages.map((img, index) => (
                 <img
@@ -151,7 +169,7 @@ function App() {
                 />
               ))}
             </div>
-          )} */}
+          )}
         </div>
 
         <div className='spatialDesignOption'>
@@ -162,7 +180,7 @@ function App() {
             Spatial Design
           </h2>
 
-          {/* {hovered === "spatialDesign" && (
+          {hovered === "spatialDesign" && (
             <div className="image-gallery">
               {visibleImages.map((img, index) => (
                 <img
@@ -174,7 +192,7 @@ function App() {
                 />
               ))}
             </div>
-          )} */}
+          )}
         </div>
 
         <div className='visualArtOption'>
@@ -185,7 +203,7 @@ function App() {
             Visual Art
           </h2>
 
-          {/* {hovered === "visualArt" && (
+          {hovered === "visualArt" && (
             <div className="image-gallery">
               {visibleImages.map((img, index) => (
                 <img
@@ -197,7 +215,7 @@ function App() {
                 />
               ))}
             </div>
-          )} */}
+          )}
         </div>
       </div>
 
@@ -215,7 +233,7 @@ function App() {
             }}
           />
         ))}
-      </div>
+      </div> */}
 
       <div className='footer'>
         <p>contact@giovanabirck.com</p>
