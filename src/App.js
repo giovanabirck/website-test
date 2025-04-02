@@ -65,6 +65,10 @@ function App() {
   const [hovered, setHovered] = useState(false);
   const [visibleImages, setVisibleImages] = useState([]);
 
+  const handleHover = (category) => {
+    setHovered(category);
+  };
+
   useEffect(() => {
     if (hovered) {
       const imagesToShow =
