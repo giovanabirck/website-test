@@ -42,16 +42,16 @@ const spatialDesignImages = [
 ];
 
 const visualArtImages = [
-  "/visual_art/image01.png",
-  "/visual_art/image02.png",
-  "/visual_art/image03.png",
-  "/visual_art/image04.png",
-  "/visual_art/image05.png",
-  "/visual_art/image06.png",
-  "/visual_art/image07.png",
-  "/visual_art/image08.png",
-  "/visual_art/image09.png",
-  "/visual_art/image10.png",
+  "/visual_art/image01.jpg",
+  "/visual_art/image02.jpg",
+  "/visual_art/image03.jpg",
+  "/visual_art/image04.jpg",
+  "/visual_art/image05.jpg",
+  "/visual_art/image06.jpg",
+  "/visual_art/image07.jpg",
+  "/visual_art/image08.jpg",
+  "/visual_art/image09.jpg",
+  "/visual_art/image10.jpg",
 ];
 
 function getRandomPosition() {
