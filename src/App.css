@@ -31,6 +31,27 @@ h1 {
   margin-right: 10vw;
 }
 
+.option h2 {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.option h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0;
+  height: 2px;
+  background-color: #0f0f0f;
+  transition: width 0.3s ease-in-out;
+}
+
+.option h2:hover::after {
+  width: 100%;
+}
+
 h2 {
   font-size: 80px;
   margin: 0;
