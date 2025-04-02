@@ -78,35 +78,53 @@ function App() {
   //   setHovered(category);
   // };
 
+  // useEffect(() => {
+  //   if (hoveredCategory) {
+  //     setVisibleImages([]); 
+  //     timeoutsRef.current.forEach(clearTimeout);
+  //     timeoutsRef.current = []; 
+  
+  //     let index = 0;
+  
+  //     function addImage() {
+  //       if (index < hoveredCategory.images.length) {
+  //         setVisibleImages((prev) => [
+  //           ...prev,
+  //           { src: hoveredCategory.images[index], position: getRandomPosition() },
+  //         ]);
+  //         index++;
+  
+  //         const timeout = setTimeout(addImage, 200);
+  //         timeoutsRef.current.push(timeout); 
+  //       }
+  //     }
+  
+  //     addImage(); 
+  //   } else {
+  //     setVisibleImages([]); 
+  //     timeoutsRef.current.forEach(clearTimeout); 
+  //     timeoutsRef.current = [];
+  //   }
+  // }, [hoveredCategory]);
+
   useEffect(() => {
     if (hoveredCategory) {
-      setVisibleImages([]); 
-      timeoutsRef.current.forEach(clearTimeout);
-      timeoutsRef.current = []; 
+      setVisibleImages([]);
   
-      let index = 0;
-  
-      function addImage() {
-        if (index < hoveredCategory.images.length) {
-          setVisibleImages((prev) => [
-            ...prev,
-            { src: hoveredCategory.images[index], position: getRandomPosition() },
-          ]);
-          index++;
-  
-          const timeout = setTimeout(addImage, 200);
-          timeoutsRef.current.push(timeout); 
-        }
-      }
-  
-      addImage(); 
+      hoveredCategory.images.forEach((image, index) => {
+        setTimeout(() => {
+          setVisibleImages((prev) => {
+            if (prev.length < hoveredCategory.images.length) { 
+              return [...prev, { src: image, position: getRandomPosition() }];
+            }
+            return prev;
+          });
+        }, index * 300);
+      });
     } else {
-      setVisibleImages([]); 
-      timeoutsRef.current.forEach(clearTimeout); 
-      timeoutsRef.current = [];
+      setVisibleImages([]);
     }
   }, [hoveredCategory]);
-
 
   return (
     <div className="App">
