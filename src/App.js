@@ -201,6 +201,22 @@ function App() {
         </div>
       </div>
 
+      <div className="image-gallery">
+        {visibleImages.map((img, index) => (
+          <img
+            key={index}
+            src={img.src}
+            alt="popup"
+            className="popup-image"
+            style={{
+              position: "absolute",
+              left: `${img.position.x}px`,
+              top: `${img.position.y}px`,
+            }}
+          />
+        ))}
+      </div>
+
       <div className='footer'>
         <p>contact@giovanabirck.com</p>
       </div>
