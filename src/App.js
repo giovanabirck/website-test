@@ -125,8 +125,12 @@ function App() {
             key={index}
             src={img.src}
             alt="popup"
-            className="popup-image show"
-            style={{ position: "absolute", left: `${img.position.x}px`, top: `${img.position.y}px` }}
+            className={`popup-image ${img.show ? "show" : ""}`}
+            style={{ 
+              position: "absolute", 
+              left: `${img.position.x}px`, 
+              top: `${img.position.y}px`
+            }}
           />
         ))}
       </div>

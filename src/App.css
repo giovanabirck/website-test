@@ -72,15 +72,15 @@ h2 {
   height: 250px;
   border-radius: 8px;
   object-fit: cover;
-  transform: scale(0);
   opacity: 0;
-  transition: transform 0.8s ease-out, opacity 0.8s ease-out;
+  transform: scale(0);
+  transition: transform 0.5s ease-out, opacity 0.5s ease-out;
   z-index: 10;
 }
 
 .popup-image.show {
-  transform: scale(1);
   opacity: 1;
+  transform: scale(1);
 }
 
 .faded {
