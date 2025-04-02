@@ -1,5 +1,5 @@
 import logo from './logo.svg';
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import './App.css';
 
 const images = [
@@ -18,6 +18,21 @@ const images = [
 function App() {
 
   const [hovered, setHovered] = useState(false);
+  const [visibleImages, setVisibleImages] = useState([]);
+
+  useEffect(() => {
+    if (hovered) {
+      setVisibleImages([]);
+      images.forEach((image, index) => {
+        setTimeout(() => {
+          setVisibleImages((prev) => [...prev, image]);
+        }, index * 300);
+      });
+    } else {
+      setVisibleImages([]);
+    }
+  }, [hovered]);
+
 
   return (
     <div className="App">
