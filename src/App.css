@@ -26,7 +26,6 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: start;
-  row-gap: 2vh;
   margin-left: 10vw;
   margin-right: 10vw;
 }
@@ -34,9 +33,8 @@ h1 {
 h2 {
   font-size: 80px;
   margin: 0;
+  line-height: 100%;
 }
-
-/* chatgpt starts */
 
 .image-gallery {
   position: fixed;
@@ -63,8 +61,6 @@ h2 {
     opacity: 1;
   }
 }
-
-/* chatgpt ends */
 
 .footer {
   display: flex;
