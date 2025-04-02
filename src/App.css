@@ -40,10 +40,10 @@ h2 {
 
 .image-gallery {
   position: fixed;
-  right: 0px;
+  right: 100px;
   top: 100px;
-  width: 500px;
-  height: 500px;
+  width: 400px;
+  height: 400px;
   overflow: hidden;
   pointer-events: none;
 }

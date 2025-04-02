@@ -16,8 +16,8 @@ const images = [
 ];
 
 function getRandomPosition() {
-  const x = Math.random() * 200;
-  const y = Math.random() * 200;
+  const x = Math.random() * 300;
+  const y = Math.random() * 300;
   return { x, y };
 }
 
