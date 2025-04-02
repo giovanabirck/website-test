@@ -8,7 +8,7 @@ function App() {
         <h1>Giovana Birck</h1>
       </div>
 
-      <div>
+      <div className='option'>
         <h2>Product Design</h2>
         <h2>Graphic Design</h2>
         <h2>Spatial Design</h2>
