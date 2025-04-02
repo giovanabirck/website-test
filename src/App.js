@@ -19,7 +19,7 @@ function getRandomPosition() {
   const frameWidth = 400;
   const frameHeight = 400;
   const marginRight = 100;
-
+  
   const x = window.innerWidth - frameWidth - marginRight + Math.random() * (frameWidth - 50);
   const y = 100 + Math.random() * frameHeight;
 
@@ -27,7 +27,6 @@ function getRandomPosition() {
 }
 
 function App() {
-
   const [hovered, setHovered] = useState(false);
   const [visibleImages, setVisibleImages] = useState([]);
 
@@ -70,10 +69,11 @@ function App() {
                   alt="popup"
                   className="popup-image"
                   style={{ 
-                    position: "absolute", 
                     left: `${img.position.x}px`, 
                     top: `${img.position.y}px`,
-                    maxWidth: "150px"
+                    maxWidth: "150px",
+                    opacity: 0,
+                    animation: `fadeIn 0.5s ease-in-out ${index * 0.2}s forwards`,
                   }}
                 />
               ))}
