@@ -64,13 +64,19 @@ function App() {
 
   const [hovered, setHovered] = useState(false);
   const [visibleImages, setVisibleImages] = useState([]);
+  const timeoutsRef = useRef([]);
 
   const handleHover = (category) => {
     setHovered(category);
   };
 
   useEffect(() => {
+    timeoutsRef.current.forEach(clearTimeout);
+    timeoutsRef.current = [];
+
     if (hovered) {
+      setVisibleImages([]);
+
       const imagesToShow =
         hovered === "productDesign"
           ? productDesignImages
@@ -80,19 +86,18 @@ function App() {
           ? spatialDesignImages
           : visualArtImages;
 
-      setVisibleImages([]);
-      imagesToShow.forEach((image, index) => {
-        setTimeout(() => {
-          setVisibleImages((prev) => [
-            ...prev,
-            { src: image, position: getRandomPosition() },
-          ]);
-        }, index * 300);
-      });
-    } else {
-      setVisibleImages([]);
-    }
-  }, [hovered]);
+        imagesToShow.forEach((image, index) => {
+          const timeout = setTimeout(() => {
+            setVisibleImages((prev) => [
+              ...prev,
+              { src: image, position: getRandomPosition() },
+            ]);
+          }, index * 300);
+          timeoutsRef.current.push(timeout);
+        });
+      } else { setVisibleImages([]); }
+    }, [hovered]
+  );
 
 
   return (
@@ -103,7 +108,7 @@ function App() {
 
       <div className='option'>
 
-        <div>
+        <div className='productDesignOption'>
           <h2 
             onMouseEnter={() => handleHover("productDesign")}
             onMouseLeave={() => setHovered(null)}
@@ -111,7 +116,7 @@ function App() {
             Product Design
           </h2>
 
-          {hovered === "productDesign" && (
+          {/* {hovered === "productDesign" && (
             <div className="image-gallery">
               {visibleImages.map((img, index) => (
                 <img
@@ -123,10 +128,10 @@ function App() {
                 />
               ))}
             </div>
-          )}
+          )} */}
         </div>
 
-        <div>
+        <div className='graphicDesignOption'>
           <h2
             onMouseEnter={() => handleHover("graphicDesign")}
             onMouseLeave={() => setHovered(null)}
@@ -134,7 +139,7 @@ function App() {
             Graphic Design
           </h2>
 
-          {hovered === "graphicDesign" && (
+          {/* {hovered === "graphicDesign" && (
             <div className="image-gallery">
               {visibleImages.map((img, index) => (
                 <img
@@ -146,10 +151,10 @@ function App() {
                 />
               ))}
             </div>
-          )}
+          )} */}
         </div>
 
-        <div>
+        <div className='spatialDesignOption'>
           <h2
             onMouseEnter={() => handleHover("spatialDesign")}
             onMouseLeave={() => setHovered(null)}
@@ -157,7 +162,7 @@ function App() {
             Spatial Design
           </h2>
 
-          {hovered === "spatialDesign" && (
+          {/* {hovered === "spatialDesign" && (
             <div className="image-gallery">
               {visibleImages.map((img, index) => (
                 <img
@@ -169,10 +174,10 @@ function App() {
                 />
               ))}
             </div>
-          )}
+          )} */}
         </div>
 
-        <div>
+        <div className='visualArtOption'>
           <h2
             onMouseEnter={() => handleHover("visualArt")}
             onMouseLeave={() => setHovered(null)}
@@ -180,7 +185,7 @@ function App() {
             Visual Art
           </h2>
 
-          {hovered === "visualArt" && (
+          {/* {hovered === "visualArt" && (
             <div className="image-gallery">
               {visibleImages.map((img, index) => (
                 <img
@@ -192,7 +197,7 @@ function App() {
                 />
               ))}
             </div>
-          )}
+          )} */}
         </div>
       </div>
 
