@@ -52,6 +52,7 @@ h2 {
   position: absolute;
   width: 120px;
   transition: transform 0.3s ease-in-out;
+  z-index: 10;
 }
 
 .popup-image:hover {
