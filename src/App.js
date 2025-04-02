@@ -12,7 +12,6 @@ const productDesignImages = [
   "/product_design/image07.png",
   "/product_design/image08.png",
   "/product_design/image09.png",
-  "/product_design/image10.png",
 ];
 
 const graphicDesignImages = [
@@ -25,7 +24,6 @@ const graphicDesignImages = [
   "/graphic_design/image07.png",
   "/graphic_design/image08.png",
   "/graphic_design/image09.png",
-  "/graphic_design/image10.png",
 ];
 
 const spatialDesignImages = [
@@ -38,7 +36,6 @@ const spatialDesignImages = [
   "/spatial_design/image08.png",
   "/spatial_design/image07.png",
   "/spatial_design/image09.png",
-  "/spatial_design/image10.png",
 ];
 
 const visualArtImages = [
@@ -51,7 +48,6 @@ const visualArtImages = [
   "/visual_art/image07.jpg",
   "/visual_art/image08.jpg",
   "/visual_art/image09.jpg",
-  "/visual_art/image10.jpg",
 ];
 
 const categories = [
