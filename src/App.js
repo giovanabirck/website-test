@@ -12,6 +12,7 @@ const productDesignImages = [
   "/product_design/image07.png",
   "/product_design/image08.png",
   "/product_design/image09.png",
+  "/product_design/image10.png",
 ];
 
 const graphicDesignImages = [
@@ -24,6 +25,7 @@ const graphicDesignImages = [
   "/graphic_design/image07.png",
   "/graphic_design/image08.png",
   "/graphic_design/image09.png",
+  "/graphic_design/image10.png",
 ];
 
 const spatialDesignImages = [
@@ -36,6 +38,7 @@ const spatialDesignImages = [
   "/spatial_design/image08.png",
   "/spatial_design/image07.png",
   "/spatial_design/image09.png",
+  "/spatial_design/image10.png",
 ];
 
 const visualArtImages = [
@@ -48,6 +51,7 @@ const visualArtImages = [
   "/visual_art/image07.jpg",
   "/visual_art/image08.jpg",
   "/visual_art/image09.jpg",
+  "/visual_art/image10.jpg",
 ];
 
 const categories = [
@@ -68,7 +72,7 @@ function App() {
   const [visibleImages, setVisibleImages] = useState([]);
   const [hoveredCategory, setHoveredCategory] = useState(null); 
 
-  // const timeoutsRef = useRef([]);
+  const timeoutsRef = useRef([]);
 
   // const handleHover = (category) => {
   //   setHovered(category);
@@ -76,7 +80,9 @@ function App() {
 
   useEffect(() => {
     if (hoveredCategory) {
-      setVisibleImages([]);
+      setVisibleImages([]); 
+      timeoutsRef.current.forEach(clearTimeout);
+      timeoutsRef.current = []; 
   
       let index = 0;
   
@@ -87,11 +93,17 @@ function App() {
             { src: hoveredCategory.images[index], position: getRandomPosition() },
           ]);
           index++;
-          setTimeout(addImage, 200); 
+  
+          const timeout = setTimeout(addImage, 200);
+          timeoutsRef.current.push(timeout); 
         }
       }
   
-      addImage();
+      addImage(); 
+    } else {
+      setVisibleImages([]); 
+      timeoutsRef.current.forEach(clearTimeout); 
+      timeoutsRef.current = [];
     }
   }, [hoveredCategory]);
 
