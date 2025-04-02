@@ -77,25 +77,36 @@ function App() {
   useEffect(() => {
     timeoutsRef.current.forEach(clearTimeout);
     timeoutsRef.current = [];
-
+  
     if (hoveredCategory) {
       setVisibleImages([]);
   
       hoveredCategory.images.forEach((image, index) => {
         const timeout = setTimeout(() => {
-          setVisibleImages((prev) => [...prev, { src: image, position: getRandomPosition() }]);
+          setVisibleImages((prev) => [
+            ...prev,
+            { src: image, position: getRandomPosition(), show: false }
+          ]);
+  
+          setTimeout(() => {
+            setVisibleImages((prev) =>
+              prev.map((img, i) =>
+                i === index ? { ...img, show: true } : img
+              )
+            );
+          }, 50);
+  
         }, index * 300);
-
-      timeoutsRef.current.push(timeout);
+  
+        timeoutsRef.current.push(timeout);
       });
     } else {
       setVisibleImages([]);
     }
-
+  
     return () => {
       timeoutsRef.current.forEach(clearTimeout);
     };
-
   }, [hoveredCategory]);
 
   return (
