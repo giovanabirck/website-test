@@ -52,14 +52,12 @@ function App() {
 
           {hovered && (
             <div className="image-gallery">
-              {images.map((src, index) => (
+              {visibleImages.map((src, index) => (
               <img key={index} src={src} alt="popup" className="popup-image" />
               ))}
             </div>
           )}
         </div>
-
-        
 
         <h2>Graphic Design</h2>
         <h2>Spatial Design</h2>
