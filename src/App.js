@@ -108,6 +108,9 @@ function App() {
   // }, [hoveredCategory]);
 
   useEffect(() => {
+    timeoutsRef.current.forEach(clearTimeout);
+    timeoutsRef.current = [];
+    
     if (hoveredCategory) {
       setVisibleImages([]);
   
