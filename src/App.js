@@ -15,6 +15,12 @@ const images = [
   "/hover_product_design/image10.png",
 ];
 
+function getRandomPosition() {
+  const x = Math.random() * 200;
+  const y = Math.random() * 200;
+  return { x, y };
+}
+
 function App() {
 
   const [hovered, setHovered] = useState(false);
@@ -25,7 +31,7 @@ function App() {
       setVisibleImages([]);
       images.forEach((image, index) => {
         setTimeout(() => {
-          setVisibleImages((prev) => [...prev, image]);
+          setVisibleImages((prev) => [...prev, { src: image, position: getRandomPosition() }]);
         }, index * 300);
       });
     } else {
@@ -52,8 +58,14 @@ function App() {
 
           {hovered && (
             <div className="image-gallery">
-              {visibleImages.map((src, index) => (
-              <img key={index} src={src} alt="popup" className="popup-image" />
+              {visibleImages.map((img, index) => (
+                <img
+                  key={index}
+                  src={img.src}
+                  alt="popup"
+                  className="popup-image"
+                  style={{ position: "absolute", left: `${img.position.x}px`, top: `${img.position.y}px` }}
+                />
               ))}
             </div>
           )}
