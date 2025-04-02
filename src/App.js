@@ -64,7 +64,7 @@ function App() {
                   src={img.src}
                   alt="popup"
                   className="popup-image"
-                  // style={{ position: "absolute", left: `${img.position.x}px`, top: `${img.position.y}px` }}
+                  style={{ left: `${img.position.x}px`, top: `${img.position.y}px` }}
                 />
               ))}
             </div>
