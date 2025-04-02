@@ -26,11 +26,13 @@ function App() {
 
       <div className='option'>
 
-        <h2 
-          onMouseEnter={() => setHovered(true)} 
-          onMouseLeave={() => setHovered(false)}
-        >
-          Product Design
+        <div>
+          <h2 
+            onMouseEnter={() => setHovered(true)} 
+            onMouseLeave={() => setHovered(false)}
+          >
+            Product Design
+          </h2>
 
           {hovered && (
             <div className="image-gallery">
@@ -39,8 +41,9 @@ function App() {
               ))}
             </div>
           )}
+        </div>
 
-        </h2>
+        
 
         <h2>Graphic Design</h2>
         <h2>Spatial Design</h2>
