@@ -50,7 +50,7 @@ h2 {
 
 .popup-image {
   position: absolute;
-  width: 120px;
+  width: 300px;
   transition: transform 0.3s ease-in-out;
   z-index: 10;
 }
