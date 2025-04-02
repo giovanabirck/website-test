@@ -8,6 +8,10 @@ function App() {
         <h1>Giovana Birck</h1>
       </div>
 
+      <div className='footer'>
+        <p>contact@giovanabirck.com</p>
+      </div>
+
     </div>
   );
 }
