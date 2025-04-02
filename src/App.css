@@ -25,7 +25,9 @@ h1 {
 .options {
   display: flex;
   flex-direction: row;
-  justify-content:space-between;
+  justify-content:space-around;
+  margin-left: 10vw;
+  margin-right: 10vw;
 }
 
 h2 {
