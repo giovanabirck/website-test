@@ -1,5 +1,5 @@
 import logo from './logo.svg';
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import './App.css';
 
 const productDesignImages = [
