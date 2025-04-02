@@ -16,8 +16,13 @@ const images = [
 ];
 
 function getRandomPosition() {
-  const x = window.innerWidth - 300 + Math.random() * 150;
-  const y = window.innerHeight * 0.2 + Math.random() * 300;
+  const frameWidth = 300;
+  const frameHeight = 400;
+  const screenWidth = window.innerWidth;
+
+  const x = screenWidth - frameWidth + Math.random() * frameWidth - 50;
+  const y = 100 + Math.random() * frameHeight;
+
   return { x, y };
 }
 

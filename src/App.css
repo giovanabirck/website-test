@@ -40,11 +40,11 @@ h2 {
 
 .image-gallery {
   position: absolute;
-  top: 50px;
-  right: 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
+  top: 100px;
+  right: 50px;
+  width: 300px;
+  height: 400px;
+  overflow: hidden;
 }
 
 .popup-image {
