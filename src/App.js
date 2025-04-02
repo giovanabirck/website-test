@@ -69,8 +69,9 @@ function getRandomPosition() {
 
 function App() {
 
-  const [hovered, setHovered] = useState(false);
   const [visibleImages, setVisibleImages] = useState([]);
+  const [hoveredCategory, setHoveredCategory] = useState(null); 
+
   // const timeoutsRef = useRef([]);
 
   // const handleHover = (category) => {
@@ -80,13 +81,11 @@ function App() {
   useEffect(() => {
     if (hoveredCategory) {
       setVisibleImages([]);
-      hoveredCategory.images.forEach((image, index) => {
-        setTimeout(() => {
-          setVisibleImages((prev) => [...prev, { src: image, position: getRandomPosition() }]);
-        }, index * 300);
-      });
-    } else {
-      setVisibleImages([]);
+      const imagesToDisplay = hoveredCategory.images.map((image, index) => ({
+        src: image,
+        position: getRandomPosition(),
+      }));
+      setVisibleImages(imagesToDisplay);
     }
   }, [hoveredCategory]);
 
@@ -96,6 +95,7 @@ function App() {
       <div className='header'>
         <h1>Giovana Birck</h1>
       </div>
+
 
     <div className="option">
       {categories.map((category) => (
