@@ -110,23 +110,25 @@ function App() {
   useEffect(() => {
     timeoutsRef.current.forEach(clearTimeout);
     timeoutsRef.current = [];
-    
+
     if (hoveredCategory) {
       setVisibleImages([]);
   
       hoveredCategory.images.forEach((image, index) => {
-        setTimeout(() => {
-          setVisibleImages((prev) => {
-            if (prev.length < hoveredCategory.images.length) { 
-              return [...prev, { src: image, position: getRandomPosition() }];
-            }
-            return prev;
-          });
+        const timeout = setTimeout(() => {
+          setVisibleImages((prev) => [...prev, { src: image, position: getRandomPosition() }]);
         }, index * 300);
+
+      timeoutsRef.current.push(timeout);
       });
     } else {
       setVisibleImages([]);
     }
+
+    return () => {
+      timeoutsRef.current.forEach(clearTimeout); // Cleanup on unmount
+    };
+    
   }, [hoveredCategory]);
 
   return (
