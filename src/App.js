@@ -16,8 +16,8 @@ const images = [
 ];
 
 function getRandomPosition() {
-  const x = Math.random() * 200;
-  const y = Math.random() * 200;
+  const x = window.innerWidth - 300 + Math.random() * 150;
+  const y = window.innerHeight * 0.2 + Math.random() * 300;
   return { x, y };
 }
 
@@ -64,7 +64,12 @@ function App() {
                   src={img.src}
                   alt="popup"
                   className="popup-image"
-                  style={{ left: `${img.position.x}px`, top: `${img.position.y}px` }}
+                  style={{ 
+                    position: "absolute", 
+                    left: `${img.position.x}px`, 
+                    top: `${img.position.y}px`,
+                    maxWidth: "150px"
+                  }}
                 />
               ))}
             </div>
