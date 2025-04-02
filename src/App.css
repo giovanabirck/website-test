@@ -58,8 +58,8 @@ h2 {
 }
 
 .faded {
-  opacity: 0.75;
-  transition: opacity 0.3s ease-in-out;
+  opacity: 0.5;
+  transition: opacity 0.5s ease-in-out;
 }
 
 @keyframes fadeIn {

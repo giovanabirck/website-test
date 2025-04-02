@@ -81,11 +81,21 @@ function App() {
   useEffect(() => {
     if (hoveredCategory) {
       setVisibleImages([]);
-      const imagesToDisplay = hoveredCategory.images.map((image, index) => ({
-        src: image,
-        position: getRandomPosition(),
-      }));
-      setVisibleImages(imagesToDisplay);
+  
+      let index = 0;
+  
+      function addImage() {
+        if (index < hoveredCategory.images.length) {
+          setVisibleImages((prev) => [
+            ...prev,
+            { src: hoveredCategory.images[index], position: getRandomPosition() },
+          ]);
+          index++;
+          setTimeout(addImage, 200); 
+        }
+      }
+  
+      addImage();
     }
   }, [hoveredCategory]);
 
