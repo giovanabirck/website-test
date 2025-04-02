@@ -48,9 +48,8 @@ h2 {
 }
 
 .popup-image {
-  position: absolute;
   width: 200px;
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.5s ease-in-out;
   z-index: 10;
 }
 
