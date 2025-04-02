@@ -36,6 +36,29 @@ h2 {
   margin: 0;
 }
 
+/* chatgpt starts */
+
+.image-gallery {
+  position: absolute;
+  top: 50px;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.popup-image {
+  width: auto;
+  height: 80px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.popup-image:hover {
+  transform: scale(1.1);
+}
+
+/* chatgpt ends */
+
 .footer {
   display: flex;
   flex-direction: row;
