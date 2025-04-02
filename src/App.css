@@ -72,8 +72,15 @@ h2 {
   height: 250px;
   border-radius: 8px;
   object-fit: cover;
-  transition: transform 0.8s ease-in-out;
+  transform: scale(0);
+  opacity: 0;
+  transition: transform 0.8s ease-out, opacity 0.8s ease-out;
   z-index: 10;
+}
+
+.popup-image.show {
+  transform: scale(1);
+  opacity: 1;
 }
 
 .popup-image:hover {

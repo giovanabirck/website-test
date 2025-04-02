@@ -74,39 +74,6 @@ function App() {
 
   const timeoutsRef = useRef([]);
 
-  // const handleHover = (category) => {
-  //   setHovered(category);
-  // };
-
-  // useEffect(() => {
-  //   if (hoveredCategory) {
-  //     setVisibleImages([]); 
-  //     timeoutsRef.current.forEach(clearTimeout);
-  //     timeoutsRef.current = []; 
-  
-  //     let index = 0;
-  
-  //     function addImage() {
-  //       if (index < hoveredCategory.images.length) {
-  //         setVisibleImages((prev) => [
-  //           ...prev,
-  //           { src: hoveredCategory.images[index], position: getRandomPosition() },
-  //         ]);
-  //         index++;
-  
-  //         const timeout = setTimeout(addImage, 200);
-  //         timeoutsRef.current.push(timeout); 
-  //       }
-  //     }
-  
-  //     addImage(); 
-  //   } else {
-  //     setVisibleImages([]); 
-  //     timeoutsRef.current.forEach(clearTimeout); 
-  //     timeoutsRef.current = [];
-  //   }
-  // }, [hoveredCategory]);
-
   useEffect(() => {
     timeoutsRef.current.forEach(clearTimeout);
     timeoutsRef.current = [];
@@ -126,9 +93,9 @@ function App() {
     }
 
     return () => {
-      timeoutsRef.current.forEach(clearTimeout); // Cleanup on unmount
+      timeoutsRef.current.forEach(clearTimeout);
     };
-    
+
   }, [hoveredCategory]);
 
   return (
@@ -164,117 +131,6 @@ function App() {
         ))}
       </div>
     )}
-
-      {/* <div className='option'>
-
-        <div className='productDesignOption'>
-          <h2 
-            onMouseEnter={() => handleHover("productDesign")}
-            onMouseLeave={() => setHovered(null)}
-          >
-            Product Design
-          </h2>
-
-          {hovered === "productDesign" && (
-            <div className="image-gallery">
-              {visibleImages.map((img, index) => (
-                <img
-                  key={index}
-                  src={img.src}
-                  alt="popup"
-                  className="popup-image"
-                  style={{ position: "absolute", left: `${img.position.x}px`, top: `${img.position.y}px` }}
-                />
-              ))}
-            </div>
-          )}
-        </div>
-
-        <div className='graphicDesignOption'>
-          <h2
-            onMouseEnter={() => handleHover("graphicDesign")}
-            onMouseLeave={() => setHovered(null)}
-          >
-            Graphic Design
-          </h2>
-
-          {hovered === "graphicDesign" && (
-            <div className="image-gallery">
-              {visibleImages.map((img, index) => (
-                <img
-                  key={index}
-                  src={img.src}
-                  alt="popup"
-                  className="popup-image"
-                  style={{ position: "absolute", left: `${img.position.x}px`, top: `${img.position.y}px` }}
-                />
-              ))}
-            </div>
-          )}
-        </div>
-
-        <div className='spatialDesignOption'>
-          <h2
-            onMouseEnter={() => handleHover("spatialDesign")}
-            onMouseLeave={() => setHovered(null)}
-          >
-            Spatial Design
-          </h2>
-
-          {hovered === "spatialDesign" && (
-            <div className="image-gallery">
-              {visibleImages.map((img, index) => (
-                <img
-                  key={index}
-                  src={img.src}
-                  alt="popup"
-                  className="popup-image"
-                  style={{ position: "absolute", left: `${img.position.x}px`, top: `${img.position.y}px` }}
-                />
-              ))}
-            </div>
-          )}
-        </div>
-
-        <div className='visualArtOption'>
-          <h2
-            onMouseEnter={() => handleHover("visualArt")}
-            onMouseLeave={() => setHovered(null)}
-          >
-            Visual Art
-          </h2>
-
-          {hovered === "visualArt" && (
-            <div className="image-gallery">
-              {visibleImages.map((img, index) => (
-                <img
-                  key={index}
-                  src={img.src}
-                  alt="popup"
-                  className="popup-image"
-                  style={{ position: "absolute", left: `${img.position.x}px`, top: `${img.position.y}px` }}
-                />
-              ))}
-            </div>
-          )}
-        </div>
-      </div>
-
-      <div className="image-gallery">
-        {visibleImages.map((img, index) => (
-          <img
-            key={index}
-            src={img.src}
-            alt="popup"
-            className="popup-image"
-            style={{
-              position: "absolute",
-              left: `${img.position.x}px`,
-              top: `${img.position.y}px`,
-            }}
-          />
-        ))}
-      </div> */}
 
       <div className='footer'>
         <p>contact@giovanabirck.com</p>
