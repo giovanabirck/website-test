@@ -22,7 +22,7 @@ h1 {
   font-size: 22px;
 }
 
-.options {
+.option {
   display: flex;
   flex-direction: row;
   justify-content:space-around;
