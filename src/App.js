@@ -62,8 +62,8 @@ const categories = [
 ];
 
 function getRandomPosition() {
-  const x = Math.random() * 400;
-  const y = Math.random() * 400;
+  const x = Math.random() * 500;
+  const y = Math.random() * 500;
   return { x, y };
 }
 
