@@ -29,16 +29,16 @@ const graphicDesignImages = [
 ];
 
 const spatialDesignImages = [
-  "/spatial_design/image01.png",
-  "/spatial_design/image02.png",
-  "/spatial_design/image03.png",
-  "/spatial_design/image04.png",
-  "/spatial_design/image05.png",
-  "/spatial_design/image06.png",
-  "/spatial_design/image08.png",
-  "/spatial_design/image07.png",
-  "/spatial_design/image09.png",
-  "/spatial_design/image10.png",
+  "/spatial_design/image01.jpg",
+  "/spatial_design/image02.jpg",
+  "/spatial_design/image03.jpg",
+  "/spatial_design/image04.jpg",
+  "/spatial_design/image05.jpg",
+  "/spatial_design/image06.jpg",
+  "/spatial_design/image08.jpg",
+  "/spatial_design/image07.jpg",
+  "/spatial_design/image09.jpg",
+  "/spatial_design/image10.jpg",
 ];
 
 const visualArtImages = [
