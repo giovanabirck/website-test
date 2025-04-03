@@ -3,16 +3,16 @@ import { useState, useEffect, useRef } from "react";
 import './App.css';
 
 const productDesignImages = [
-  "/product_design/image01.png",
-  "/product_design/image02.png",
-  "/product_design/image03.png",
-  "/product_design/image04.png",
-  "/product_design/image05.png",
-  "/product_design/image06.png",
-  "/product_design/image07.png",
-  "/product_design/image08.png",
-  "/product_design/image09.png",
-  "/product_design/image10.png",
+  "/product_design/image01.jpg",
+  "/product_design/image02.jpg",
+  "/product_design/image03.jpg",
+  "/product_design/image04.jpg",
+  "/product_design/image05.jpg",
+  "/product_design/image06.jpg",
+  "/product_design/image07.jpg",
+  "/product_design/image08.jpg",
+  "/product_design/image09.jpg",
+  "/product_design/image10.jpg",
 ];
 
 const graphicDesignImages = [

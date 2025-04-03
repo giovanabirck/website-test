@@ -20,7 +20,7 @@
 }
 
 h1 {
-  font-size: 22px;
+  font-size: 20px;
 }
 
 .option {
@@ -84,7 +84,7 @@ h2 {
 }
 
 .faded {
-  opacity: 0.2;
+  opacity: 0.15;
   transition: opacity 0.3s ease-in-out;
 }
 
