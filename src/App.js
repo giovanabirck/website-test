@@ -16,16 +16,16 @@ const productDesignImages = [
 ];
 
 const graphicDesignImages = [
-  "/graphic_design/image01.png",
-  "/graphic_design/image02.png",
-  "/graphic_design/image03.png",
-  "/graphic_design/image04.png",
-  "/graphic_design/image05.png",
-  "/graphic_design/image06.png",
-  "/graphic_design/image07.png",
-  "/graphic_design/image08.png",
-  "/graphic_design/image09.png",
-  "/graphic_design/image10.png",
+  "/graphic_design/image01.jpg",
+  "/graphic_design/image02.jpg",
+  "/graphic_design/image03.jpg",
+  "/graphic_design/image04.jpg",
+  "/graphic_design/image05.jpg",
+  "/graphic_design/image06.jpg",
+  "/graphic_design/image07.jpg",
+  "/graphic_design/image08.jpg",
+  "/graphic_design/image09.jpg",
+  "/graphic_design/image10.jpg",
 ];
 
 const spatialDesignImages = [
