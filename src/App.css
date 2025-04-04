@@ -115,6 +115,11 @@ h1 {
     margin-right: 5vw;
   }
 
+  .option {
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
+
   .option h2 {
     font-size: 72px;
   }
@@ -123,21 +128,21 @@ h1 {
 /* Phones */
 @media (max-width: 480px) {
   .header {
-    margin-top: 1vh;
-    margin-left: 5vw;
-    margin-right: 5vw;
+    padding-top: 1vh;
   }
 
   .footer {
     justify-content:center;
-    margin-left: 5vw;
-    margin-right: 5vw;
+    padding-bottom: 1vh;
   }
 
   .option h2 {
     font-size: 40px;
+    line-height: 200%;
   }
 }
 
 /* Small Phones */
-@media (max-width: 375px) {}
+@media (max-width: 375px) {
+  
+}
