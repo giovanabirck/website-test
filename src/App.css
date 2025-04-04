@@ -35,6 +35,9 @@ h1 {
   position: relative;
   display: inline-block;
   cursor: pointer;
+  font-size: 80px;
+  margin: 0;
+  line-height: 150%;
 }
 
 .option h2::after {
@@ -50,12 +53,6 @@ h1 {
 
 .option h2:hover::after {
   width: 100%;
-}
-
-h2 {
-  font-size: 80px;
-  margin: 0;
-  line-height: 150%;
 }
 
 .image-gallery {
@@ -103,3 +100,28 @@ h2 {
   margin-right: 10vw;
   font-size: 16px;
 }
+
+/* MEDIA QUERIES FOR RESPONSIVENESS */
+
+/* Tablets and Large Phones */
+@media (max-width: 768px) {
+  .header {
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
+
+  .footer {
+    margin-left: 5vw;
+    margin-right: 5vw;
+  }
+
+  .option h2 {
+    font-size: 72px;
+  }
+}
+
+/* Phones */
+@media (max-width: 480px) {}
+
+/* Small Phones */
+@media (max-width: 375px) {}
