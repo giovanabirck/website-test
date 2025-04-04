@@ -138,11 +138,11 @@ h1 {
 
   .option h2 {
     font-size: 40px;
-    line-height: 200%;
+    line-height: 175%;
   }
 }
 
 /* Small Phones */
 @media (max-width: 375px) {
-  
+
 }
