@@ -2,11 +2,11 @@ import logo from './logo.svg';
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import './App.css';
 
-import ProductDesignPage from './pages/Product Design/ProductDesign';
-import GraphicDesignPage from './pages/GraphicDesign';
-import SpatialDesignPage from './pages/SpatialDesign';
-import VisualArtPage from './pages/VisualArt';
-import Home from './pages/Home';
+import ProductDesignPage from './pages/product-design/ProductDesign';
+import GraphicDesignPage from './pages/graphic-design/GraphicDesign';
+import SpatialDesignPage from './pages/spatial-design/SpatialDesign';
+import VisualArtPage from './pages/visual-art/VisualArt';
+import Home from './pages/home/Home';
 
 
 function App() {

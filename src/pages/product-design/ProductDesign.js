@@ -1,13 +1,15 @@
-import './App.css';
+import React from 'react';
+import './ProductDesign.modules.css';
+import '.../global.css'
 
-function SpatialDesign() {
+function ProductDesign() {
     return (
       <>
         <div className="header"><h1>Giovana Birck</h1></div>
   
         <div className="content">
-          <h2>Spatial Design</h2>
-          <p>Show your spatial design work here...</p>
+          <h2>Product Design</h2>
+          <p>Show your product design work here...</p>
         </div>
   
         <div className="footer">
@@ -17,4 +19,5 @@ function SpatialDesign() {
     );
 }
   
-export default SpatialDesign;
+export default ProductDesign;
+  

@@ -1,15 +1,13 @@
-import React from 'react';
-import './ProductDesign.module.css';
-import '.../global.css'
+import './VisualArt.modules.css';
 
-function ProductDesign() {
+function VisualArt() {
     return (
       <>
         <div className="header"><h1>Giovana Birck</h1></div>
   
         <div className="content">
-          <h2>Product Design</h2>
-          <p>Show your product design work here...</p>
+          <h2>Visual Art</h2>
+          <p>Show your visual art work here...</p>
         </div>
   
         <div className="footer">
@@ -19,5 +17,4 @@ function ProductDesign() {
     );
 }
   
-export default ProductDesign;
-  
+export default VisualArt;

@@ -1,13 +1,13 @@
-import './App.css';
+import './SpatialDesign.modules.css';
 
-function VisualArt() {
+function SpatialDesign() {
     return (
       <>
         <div className="header"><h1>Giovana Birck</h1></div>
   
         <div className="content">
-          <h2>Visual Art</h2>
-          <p>Show your visual art work here...</p>
+          <h2>Spatial Design</h2>
+          <p>Show your spatial design work here...</p>
         </div>
   
         <div className="footer">
@@ -17,4 +17,4 @@ function VisualArt() {
     );
 }
   
-export default VisualArt;
+export default SpatialDesign;

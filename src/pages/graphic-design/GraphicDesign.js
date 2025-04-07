@@ -1,4 +1,5 @@
-import './App.css';
+import './GraphicDesign.modules.css';
+
 
 function GraphicDesign() {
     return (
