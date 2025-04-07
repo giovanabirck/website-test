@@ -41,20 +41,17 @@
   
 .tabs button {
     padding: 0.5rem 1rem;
-    font-size: 1rem;
+    font-size: 16px;
     cursor: pointer;
     background: none;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    border: #494949;
     transition: all 0.2s ease;
 }
-  
-.tabs button:hover {
-    background-color: #f0f0f0;
-}
-  
+
 .tabs button.active {
-    border-color: black;
-    font-weight: bold;
+    color: #0F0F0F;
+    border-color: #0F0F0F;
+    font-weight: 800;
+    border-bottom: 1px;
     background-color: #e0e0e0;
 }

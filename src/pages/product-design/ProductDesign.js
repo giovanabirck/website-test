@@ -38,7 +38,6 @@ function ProductDesign() {
         </div>
 
         <div className="content">
-          <h2>Product Design</h2>
 
           <div className="tabs">
             <button onClick={() => setActiveTab('everyone')} className={activeTab === 'everyone' ? 'active' : ''}>
