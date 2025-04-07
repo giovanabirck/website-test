@@ -8,11 +8,11 @@ function ProductDesign() {
   const renderTabContent = () => {
     switch (activeTab) {
       case 'everyone':
-        return <p>This is content for everyone ✨</p>;
+        return <h2>Making things engaging and easy to use</h2>;
       case 'recruiters':
-        return <p>This is content for recruiters 💼</p>;
+        return <h2>Designing with innovation and purpose</h2>;
       case 'clients':
-        return <p>This is content for clients 🧑‍🎨</p>;
+        return <h2>Helping you reach your business goals</h2>;
       default:
         return null;
     }
