@@ -8,7 +8,14 @@ function ProductDesign() {
   const renderTabContent = () => {
     switch (activeTab) {
       case 'everyone':
-        return <h2>Making things engaging and easy to use</h2>;
+        return <div>
+            <h2>Making things engaging and easy to use</h2>
+            <p>
+              Product Designer with the goal of creating a more inclusive and 
+              beautiful digital world 🌼 Passionate about building products that 
+              help people complete tasks seamlessly and find what they need!
+            </p>
+        </div>;
       case 'recruiters':
         return <h2>Designing with innovation and purpose</h2>;
       case 'clients':
