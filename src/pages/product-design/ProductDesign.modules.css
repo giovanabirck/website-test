@@ -32,3 +32,29 @@
     margin-top: 2vw;
     margin-bottom: 2vw;
 }
+
+.tabs {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+  
+.tabs button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    background: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+}
+  
+.tabs button:hover {
+    background-color: #f0f0f0;
+}
+  
+.tabs button.active {
+    border-color: black;
+    font-weight: bold;
+    background-color: #e0e0e0;
+}
