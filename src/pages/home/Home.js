@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import './Home.modules.css';
 
 
-
 const productDesignImages = [
   "/product_design/image01.jpg",
   "/product_design/image02.jpg",
@@ -56,12 +55,6 @@ const visualArtImages = [
   "/visual_art/image10.jpg",
 ];
 
-// const categories = [
-//   { name: "Product Design", images: productDesignImages },
-//   { name: "Graphic Design", images: graphicDesignImages },
-//   { name: "Spatial Design", images: spatialDesignImages },
-//   { name: "Visual Art", images: visualArtImages },
-// ];
 
 const categories = [
     { 

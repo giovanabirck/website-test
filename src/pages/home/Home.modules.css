@@ -1,0 +1,32 @@
+.option {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+  
+.option h2 {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    color: #0F0F0F;
+    font-size: 80px;
+    margin: 0;
+    line-height: 150%;
+}
+  
+.option h2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 16px;
+    width: 0;
+    height: 6px;
+    background-color: #0f0f0f;
+    transition: width 0.5s ease-in-out;
+}
+  
+.option h2:hover::after {
+    width: 100%;
+}

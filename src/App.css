@@ -8,6 +8,8 @@
   width: 100vw;
   font-family: "Plus Jakarta Sans", sans-serif;
   color: #0F0F0F;
+  background-image: radial-gradient(#E1E1E1 1px, transparent 1px);
+  background-size: 20px 20px;
 }
 
 .header {
@@ -35,6 +37,7 @@ h1 {
   position: relative;
   display: inline-block;
   cursor: pointer;
+  color: #0F0F0F;
   font-size: 80px;
   margin: 0;
   line-height: 150%;
