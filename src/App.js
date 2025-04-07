@@ -2,10 +2,10 @@ import logo from './logo.svg';
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import './App.css';
 
-import ProductDesignPage from './pages/product-design/ProductDesign';
-import GraphicDesignPage from './pages/graphic-design/GraphicDesign';
-import SpatialDesignPage from './pages/spatial-design/SpatialDesign';
-import VisualArtPage from './pages/visual-art/VisualArt';
+import ProductDesign from './pages/product-design/ProductDesign';
+import GraphicDesign from './pages/graphic-design/GraphicDesign';
+import SpatialDesign from './pages/spatial-design/SpatialDesign';
+import VisualArt from './pages/visual-art/VisualArt';
 import Home from './pages/home/Home';
 
 
