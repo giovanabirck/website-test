@@ -1,6 +1,6 @@
 import React from 'react';
 import './ProductDesign.modules.css';
-import '../global.css'
+// import '../global.css'
 
 function ProductDesign() {
     return (
