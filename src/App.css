@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -8,11 +8,9 @@
   width: 100vw;
   font-family: "Plus Jakarta Sans", sans-serif;
   color: #0F0F0F;
-  background-image: radial-gradient(#E1E1E1 1px, transparent 1px);
-  background-size: 24px 24px;
-}
+} */
 
-.header {
+/* .header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -23,7 +21,7 @@
 
 h1 {
   font-size: 20px;
-}
+} */
 
 .option {
   display: flex;
@@ -93,7 +91,7 @@ h1 {
   }
 }
 
-.footer {
+/* .footer {
   display: flex;
   flex-direction: row;
   justify-content:space-between;
@@ -101,7 +99,7 @@ h1 {
   margin-left: 10vw;
   margin-right: 10vw;
   font-size: 16px;
-}
+} */
 
 /* MEDIA QUERIES FOR RESPONSIVENESS */
 
