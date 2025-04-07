@@ -6,7 +6,9 @@ function VisualArt() {
       <>
         <div className="header">
           <h1>
-            <Link to="/">Giovana Birck</Link>
+            <Link to="/" className="header_link">
+              Giovana Birck
+            </Link>
           </h1>
           <h1>/ Visual Art</h1>
         </div>
