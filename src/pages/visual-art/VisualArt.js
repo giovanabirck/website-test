@@ -3,7 +3,10 @@ import './VisualArt.modules.css';
 function VisualArt() {
     return (
       <>
-        <div className="header"><h1>Giovana Birck</h1></div>
+        <div className="header">
+          <h1>Giovana Birck</h1>
+          <h1> / Visual Art</h1>
+        </div>
   
         <div className="content">
           <h2>Visual Art</h2>

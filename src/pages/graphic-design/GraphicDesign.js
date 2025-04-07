@@ -4,7 +4,10 @@ import './GraphicDesign.modules.css';
 function GraphicDesign() {
     return (
       <>
-        <div className="header"><h1>Giovana Birck</h1></div>
+        <div className="header">
+          <h1>Giovana Birck</h1>
+          <h1> / Graphic Design</h1>
+        </div>
   
         <div className="content">
           <h2>Graphic Design</h2>
