@@ -82,12 +82,12 @@ function App() {
       setVisibleImages([]);
   
       hoveredCategory.images.forEach((image, index) => {
-        const timeout = setTimeout(() => {
+        setTimeout(() => {
           setVisibleImages((prev) => [
             ...prev,
             { src: image, position: getRandomPosition(), show: false }
           ]);
-  
+        
           setTimeout(() => {
             setVisibleImages((prev) =>
               prev.map((img, i) =>
@@ -95,7 +95,6 @@ function App() {
               )
             );
           }, 50);
-  
         }, index * 300);
   
         timeoutsRef.current.push(timeout);
