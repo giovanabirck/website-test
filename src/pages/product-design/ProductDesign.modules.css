@@ -11,6 +11,14 @@
 
 .navigation {
     width: 20vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.navigation h3{
+    font-size: 18px;
+    font-weight: 200;
 }
 
 .content {
