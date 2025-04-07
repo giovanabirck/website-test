@@ -81,7 +81,7 @@ function App() {
     if (hoveredCategory) {
       setVisibleImages([]);
   
-      const startDelay = 500;
+      const startDelay = 250;
   
       hoveredCategory.images.forEach((image, index) => {
         const timeout = setTimeout(() => {
