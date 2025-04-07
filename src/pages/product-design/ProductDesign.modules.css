@@ -56,7 +56,13 @@
     border-width: 0px 0px 2px 0px;
 }
 
-h2 {
+.tab_content h2 {
     font-size: 100px;
+    text-align: left;
+    margin: 0px;
+}
+
+.tab_content p {
+    font-size: 20px;
     text-align: left;
 }
