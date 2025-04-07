@@ -6,9 +6,9 @@ function GraphicDesign() {
     return (
       <>
         <div className="header">
-        <h1>
-          <Link to="/">Giovana Birck</Link>
-        </h1>
+          <h1>
+            <Link to="/">Giovana Birck</Link>
+          </h1>
           <h1>/ Graphic Design</h1>
         </div>
   

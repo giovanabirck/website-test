@@ -1,12 +1,14 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 import './ProductDesign.modules.css';
-// import '../global.css'
 
 function ProductDesign() {
     return (
       <>
         <div className="header">
-          <h1>Giovana Birck</h1>
+          <h1>
+            <Link to="/">Giovana Birck</Link>
+          </h1>
           <h1>/ Product Design</h1>
         </div>
   
