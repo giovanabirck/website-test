@@ -81,28 +81,25 @@ function App() {
     if (hoveredCategory) {
       setVisibleImages([]);
   
+      const startDelay = 500;
+  
       hoveredCategory.images.forEach((image, index) => {
-        const addImageTimeout = setTimeout(() => {
+        const timeout = setTimeout(() => {
           setVisibleImages((prev) => [
             ...prev,
             { src: image, position: getRandomPosition(), show: false }
           ]);
-        
-          const showDelay = index === 0 ? 500 : 50;
-        
-          const showImageTimeout = setTimeout(() => {
+  
+          setTimeout(() => {
             setVisibleImages((prev) =>
               prev.map((img, i) =>
                 i === index ? { ...img, show: true } : img
               )
             );
-          }, showDelay);
-        
-          timeoutsRef.current.push(showImageTimeout);
-        
-        }, index * 300);
-        
-        timeoutsRef.current.push(addImageTimeout);
+          }, 50); 
+  
+        }, startDelay + index * 300); 
+        timeoutsRef.current.push(timeout);
       });
     } else {
       setVisibleImages([]);
