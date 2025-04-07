@@ -5,7 +5,7 @@ function VisualArt() {
       <>
         <div className="header">
           <h1>Giovana Birck</h1>
-          <h1> / Visual Art</h1>
+          <h1>/ Visual Art</h1>
         </div>
   
         <div className="content">
