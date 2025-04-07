@@ -82,15 +82,15 @@ function App() {
       setVisibleImages([]);
   
       hoveredCategory.images.forEach((image, index) => {
-        setTimeout(() => {
+        const addImageTimeout = setTimeout(() => {
           setVisibleImages((prev) => [
             ...prev,
             { src: image, position: getRandomPosition(), show: false }
           ]);
         
-          const showDelay = index === 0 ? 500 : 50; 
+          const showDelay = index === 0 ? 500 : 50;
         
-          setTimeout(() => {
+          const showImageTimeout = setTimeout(() => {
             setVisibleImages((prev) =>
               prev.map((img, i) =>
                 i === index ? { ...img, show: true } : img
@@ -98,9 +98,11 @@ function App() {
             );
           }, showDelay);
         
+          timeoutsRef.current.push(showImageTimeout);
+        
         }, index * 300);
-  
-        timeoutsRef.current.push(timeout);
+        
+        timeoutsRef.current.push(addImageTimeout);
       });
     } else {
       setVisibleImages([]);
