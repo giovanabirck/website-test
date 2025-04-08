@@ -14,6 +14,7 @@
     flex-direction: row;
     /* height: 100vh; */
     width: 100vw;
+    overflow: visible;
 }
 
 /* .navigation {
@@ -38,6 +39,7 @@
     margin-left: 10vw;
     padding-top: 3vw;
     padding-bottom: 2vw;
+    align-self: flex-start;
 }
 
 .navigation h3{
