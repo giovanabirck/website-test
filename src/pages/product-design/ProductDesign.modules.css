@@ -43,7 +43,7 @@
     position: relative;
     font-size: 16px;
     cursor: pointer;
-    letter-spacing: 0.1rem;
+    letter-spacing: 0.04rem;
     background: none;
     border: none;
     padding-bottom: 0.5rem;
@@ -65,10 +65,22 @@
 .tabs button.active {
     color: #0F0F0F;
     font-weight: 600;
+    letter-spacing: normal;
 }
   
 .tabs button.active::after {
     width: 100%;
+}
+
+.tab_content {
+    opacity: 0;
+    transform: translateY(5px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.tab_content.fade-in {
+    opacity: 1;
+    transform: translateY(0px);
 }
 
 .tab_content h2 {
