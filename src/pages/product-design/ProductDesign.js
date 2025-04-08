@@ -8,7 +8,7 @@ function ProductDesign() {
   const renderTabContent = () => {
     switch (activeTab) {
       case 'everyone':
-        return <div className='tab_content'>
+        return <div className={`tab_content ${activeTab === 'everyone' ? 'visible' : ''}`}>
             <h2>Making things engaging and easy to use</h2>
             <p>
               <span>Designer</span> with the goal of creating a more inclusive and beautiful 
@@ -22,7 +22,7 @@ function ProductDesign() {
             </ul>
         </div>;
       case 'recruiters':
-        return <div className='tab_content'>
+        return <div className={`tab_content ${activeTab === 'recruiters' ? 'visible' : ''}`}>
           <h2>Designing with innovation and purpose</h2>
           <p>
             <span>Product Designer</span> with a multidisciplinary background in the cultural and 
@@ -36,7 +36,7 @@ function ProductDesign() {
           </ul>
         </div>;
       case 'clients':
-        return <div className='tab_content'>
+        return <div className={`tab_content ${activeTab === 'clients' ? 'visible' : ''}`}>
           <h2>Helping you reach your business goals</h2>
           <p>
             <span>Designer</span> working in the intersection of art, design and technology, 
