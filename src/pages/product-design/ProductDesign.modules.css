@@ -119,11 +119,19 @@
 
 .project {
     display: flex;
+    flex-direction: column;
     justify-content: flex-start;
+}
+
+.project img {
+    border-radius: 8px;
 }
 
 .project h4 {
     font-size: 20px;
+    text-align: left;
+    margin-top: 1rem;
+    margin-bottom: 0rem;
 }
 
 .project_details {
