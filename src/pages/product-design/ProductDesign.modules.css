@@ -106,7 +106,7 @@
 
 hr {
     margin-top: 3rem;
-    color: #919191;
+    border: solid 0.5 #919191;
 }
 
 .bullet_points {
