@@ -15,7 +15,7 @@ function ProductDesign() {
               digital world 🌼 Passionate about building products that help 
               people complete tasks seamlessly and find what they need!
             </p>
-            <div className='bullet points'>
+            <div className='bullet_points'>
               <p>Vancouver based</p>
               <p>·</p>
               <p>Empathy-Driven</p>
