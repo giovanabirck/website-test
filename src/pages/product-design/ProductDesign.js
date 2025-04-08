@@ -58,7 +58,7 @@ function ProductDesign() {
     <div className="product_design_page">
       <div className="header">
         <h1>
-          <Link to="/" className="header_link">
+          <Link to="/">
             Giovana Birck
           </Link>
         </h1>
@@ -67,7 +67,7 @@ function ProductDesign() {
 
       <div className="main_container">
         <div className="navigation">
-          <Link to="/">
+          <Link to="/about/ProductDesignAbout.js" className='navigation_link'>
             <h3>work</h3>
           </Link>
 

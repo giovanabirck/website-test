@@ -36,11 +36,14 @@
     font-weight: 400;
     line-height: 0.5;
     letter-spacing: 0.04rem;
+    color: #0F0F0F;
+    text-decoration: none;
 }
 
 .navigation h3:hover{
     font-weight: 600;
     line-height: 0.5;
+    letter-spacing: normal;
 }
 
 .navigation h3::after {
@@ -51,6 +54,7 @@
     height: 1.5px;
     width: 0%;
     background: #0F0F0F;
+    letter-spacing: normal;
     transition: width 0.5s ease;
 }
   
@@ -77,6 +81,7 @@
     position: relative;
     font-size: 16px;
     cursor: pointer;
+    width: 120px;
     letter-spacing: 0.04rem;
     background: none;
     border: none;
@@ -88,6 +93,7 @@
 .tabs button:hover {
     color: #0F0F0F;
     font-weight: 600;
+    letter-spacing: normal;
 }
   
 .tabs button::after {
