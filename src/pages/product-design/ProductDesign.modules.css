@@ -1,3 +1,7 @@
+.product_design_page {
+    height: 100vh;
+}
+
 .header_link {
     color: #0F0F0F;
     text-decoration: none;
@@ -93,8 +97,8 @@
 }
 
 hr {
-    margin-top: 1rem;
-    color: #494949;
+    margin-top: 3rem;
+    color: #787878;
 }
 
 .bullet_points {
@@ -102,7 +106,7 @@ hr {
     gap: 1rem;
     list-style: none;
     padding: 0;
-    margin-top: 1rem;
+    margin-top: 3rem;
     font-weight: 600;
     font-size: 16px;
     color: #0F0F0F;

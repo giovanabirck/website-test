@@ -55,7 +55,7 @@ function ProductDesign() {
   };
 
   return (
-    <>
+    <div className="product_design_page">
       <div className="header">
         <h1>
           <Link to="/" className="header_link">
@@ -124,7 +124,7 @@ function ProductDesign() {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 }
   
