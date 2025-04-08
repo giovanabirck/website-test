@@ -91,7 +91,27 @@ function ProductDesign() {
             {renderTabContent()}
           </div>
 
+          <hr/>
+
           <div className='projects_list'>
+            <div className='project'>
+              <img src='/product_design/adp_hr_actions.jpg' alt='HR Actions'/>
+              <h4>Transforming ADP's HR Actions with a Scalable Design System</h4>
+              <ul className='project_details'>
+                <li>shipped</li>
+                <li>desktop</li>
+              </ul>
+            </div>
+
+            <div className='project'>
+              <img src='/product_design/adp_hr_actions.jpg' alt='HR Actions'/>
+              <h4>Transforming ADP's HR Actions with a Scalable Design System</h4>
+              <ul className='project_details'>
+                <li>shipped</li>
+                <li>desktop</li>
+              </ul>
+            </div>
+
             <div className='project'>
               <img src='/product_design/adp_hr_actions.jpg' alt='HR Actions'/>
               <h4>Transforming ADP's HR Actions with a Scalable Design System</h4>
