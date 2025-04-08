@@ -60,6 +60,7 @@
     font-size: 100px;
     text-align: left;
     margin: 0px;
+    width: 800px;
 }
 
 .tab_content p {
@@ -67,4 +68,9 @@
     text-align: left;
     line-height: 1.8;
     width: 700px;
+}
+
+.tab_content span {
+    background-color: #0000EE;
+    color: #F8F8F8;
 }
