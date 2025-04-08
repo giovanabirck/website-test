@@ -1,5 +1,5 @@
 .product_design_page {
-    height: 300vh;
+    height: 310vh;
 }
 
 .header_link {
@@ -168,7 +168,15 @@ hr {
     content: '';
 }
 
-.content button { 
+.button_all_projects { 
     display: flex;
-    width: 100vw;
+    width: 900px;
+    font-size: 18px;
+    padding: 8px;
+    margin-top: 2rem;
+    background-color: #F8F8F8;
+    border-style: solid;
+    border-color: #919191;
+    border-width: 1px;
+    border-radius: 4px;
 }

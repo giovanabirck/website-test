@@ -121,8 +121,12 @@ function ProductDesign() {
               </ul>
             </div>
           </div>
-          <button>see more</button>
+          <button className='button_all_projects'>see all projects</button>
         </div>
+      </div>
+
+      <div className='footer'>
+        <p>contact@giovanabirck.com</p>
       </div>
     </div>
   );
