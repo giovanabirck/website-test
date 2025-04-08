@@ -17,9 +17,23 @@ function ProductDesign() {
             </p>
         </div>;
       case 'recruiters':
-        return <h2>Designing with innovation and purpose</h2>;
+        return <div className='tab_content'>
+          <h2>Designing with innovation and purpose</h2>
+          <p>
+            Product Designer with a multidisciplinary background in the cultural and 
+            entertainment industries, I incorporate a holistic approach to my designs. 
+            Strong focus on interaction design, strategy and accessibility.
+          </p>
+        </div>;
       case 'clients':
-        return <h2>Helping you reach your business goals</h2>;
+        return <div className='tab_content'>
+          <h2>Helping you reach your business goals</h2>
+          <p>
+            Designer working in the intersection of art, design and technology, 
+            I have the goal of building and optimizing your business digital 
+            image through intuitive and beautiful experiences 🔥
+          </p>
+        </div>;
       default:
         return null;
     }
