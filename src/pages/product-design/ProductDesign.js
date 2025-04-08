@@ -132,14 +132,14 @@ function ProductDesign() {
             <svg
               className="arrow_icon"
               xmlns="http://www.w3.org/2000/svg"
-              width="20"
-              height="20"
+              width="24"
+              height="24"
               fill="none"
               viewBox="0 0 24 24"
             >
               <path
                 stroke="currentColor"
-                strokeWidth="2"
+                strokeWidth="1.5"
                 strokeLinecap="round"
                 strokeLinejoin="round"
                 d="M5 12h14M13 5l7 7-7 7"

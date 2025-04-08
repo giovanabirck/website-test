@@ -108,7 +108,7 @@ hr {
     margin-top: 3rem;
     border-style: solid;
     border-width: 0.5px;
-    border-color: #919191;
+    border-color: #acacac;
 }
 
 .bullet_points {
@@ -192,9 +192,11 @@ hr {
 
 .button_all_projects { 
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     width: 900px;
     font-size: 18px;
-    padding: 16px 12px;
+    padding: 14px 12px;
     margin-top: 2rem;
     margin-bottom: 1rem;
     background-color: #F8F8F8;
@@ -202,4 +204,9 @@ hr {
     border-color: #919191;
     border-width: 1px;
     border-radius: 4px;
+}
+
+.button_all_projects:hover { 
+    background-color: #E1E1E1;
+    border-width: 0px;
 }
