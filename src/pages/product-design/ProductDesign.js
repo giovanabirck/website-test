@@ -1,15 +1,14 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import { Link } from "react-router-dom";
 import './ProductDesign.modules.css';
 
 function ProductDesign() {
   const [activeTab, setActiveTab] = useState('everyone');
-  const [fadeClass, setFadeClass] = useState('');
 
   const renderTabContent = () => {
     switch (activeTab) {
       case 'everyone':
-        return <div className={`tab_content ${fadeClass}`}>
+        return <div className='tab_content'>
             <h2>Making things engaging and easy to use</h2>
             <p>
               <span>Designer</span> with the goal of creating a more inclusive and beautiful 
@@ -23,7 +22,7 @@ function ProductDesign() {
             </ul>
         </div>;
       case 'recruiters':
-        return <div className={`tab_content ${fadeClass}`}>
+        return <div className='tab_content'>
           <h2>Designing with innovation and purpose</h2>
           <p>
             <span>Product Designer</span> with a multidisciplinary background in the cultural and 
@@ -37,7 +36,7 @@ function ProductDesign() {
           </ul>
         </div>;
       case 'clients':
-        return <div className={`tab_content ${fadeClass}`}>
+        return <div className='tab_content'>
           <h2>Helping you reach your business goals</h2>
           <p>
             <span>Designer</span> working in the intersection of art, design and technology, 
@@ -54,18 +53,6 @@ function ProductDesign() {
         return null;
     }
   };
-
-  const handleTabClick = (tab) => {
-    setFadeClass('fade-out');
-    setTimeout(() => {
-      setActiveTab(tab);
-      setFadeClass('fade-in');
-    }, 500);
-  };
-
-  useEffect(() => {
-    setFadeClass('fade-in');
-  }, []);
 
   return (
     <div className="product_design_page">

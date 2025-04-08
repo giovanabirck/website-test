@@ -83,31 +83,6 @@
     width: 100%;
 }
 
-.tab_content {
-    opacity: 1;
-    transition: opacity 0.3s ease-in-out;
-    visibility: visible;
-}
-
-.fade-out {
-    opacity: 0;
-}
-  
-.fade-in {
-    opacity: 1;
-}
-
-/* 
-.tab_content.fade-out {
-    opacity: 0;
-    visibility: hidden;
-}
-
-.tab_content.fade-in {
-    opacity: 1;
-    visibility: visible;
-} */
-
 .tab_content h2 {
     font-size: 96px;
     text-align: left;
