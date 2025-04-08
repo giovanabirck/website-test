@@ -83,13 +83,20 @@
     width: 100%;
 }
 
-.tab-content {
-    opacity: 0; 
+.tab_content {
+    opacity: 1;
     transition: opacity 0.5s ease-in-out;
+    visibility: visible;
 }
 
-.tab-content.visible {
+.tab_content.fade-out {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.tab_content.fade-in {
     opacity: 1;
+    visibility: visible;
 }
 
 .tab_content h2 {
