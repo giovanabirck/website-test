@@ -148,7 +148,7 @@ hr {
     width: 100%;
     height: auto;
     object-fit: cover;
-    transform: transition 0.4s ease;
+    transition: transform 0.8s ease;
 }
 
 .image_wrapper {

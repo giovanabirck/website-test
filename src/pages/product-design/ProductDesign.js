@@ -106,7 +106,9 @@ function ProductDesign() {
             </div>
 
             <div className='project'>
-              <img src='/product_design/adp_hr_actions.jpg' alt='HR Actions'/>
+              <div className='image_wrapper'>
+                <img src='/product_design/adp_hr_actions.jpg' alt='HR Actions'/>
+              </div>
               <h4>Enhancing the Nomadic Experience with Network Recommendations</h4>
               <ul className='project_details'>
                 <li>in development</li>
@@ -115,7 +117,9 @@ function ProductDesign() {
             </div>
 
             <div className='project'>
-              <img src='/product_design/adp_hr_actions.jpg' alt='HR Actions'/>
+              <div className='image_wrapper'>
+                <img src='/product_design/adp_hr_actions.jpg' alt='HR Actions'/>
+              </div>
               <h4>Improving Usability in MyADP's Task Management Tool, Things to Do</h4>
               <ul className='project_details'>
                 <li>shipped</li>
