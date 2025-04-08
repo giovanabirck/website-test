@@ -67,16 +67,27 @@ function ProductDesign() {
 
       <div className="main_container">
         <div className="navigation">
-          <h3>work</h3>
-          <h3>about</h3>
-          <h3>references</h3>
-          <h3>resume</h3>
+          <Link to="/">
+            <h3>work</h3>
+          </Link>
+
+          <Link to="/">
+            <h3>about</h3>
+          </Link>
+
+          <Link to="/">
+            <h3>references</h3>
+          </Link>
+
+          <Link to="/">
+            <h3>resume</h3>
+          </Link>
         </div>
 
         <div className="content">
 
           <div className="tabs">
-          <button onClick={() => setActiveTab('everyone')} className={activeTab === 'everyone' ? 'active' : ''}>
+            <button onClick={() => setActiveTab('everyone')} className={activeTab === 'everyone' ? 'active' : ''}>
               For Everyone
             </button>
             <button onClick={() => setActiveTab('recruiters')} className={activeTab === 'recruiters' ? 'active' : ''}>
