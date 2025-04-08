@@ -120,8 +120,8 @@ function ProductDesign() {
                 <li>desktop</li>
               </ul>
             </div>
-
           </div>
+          <button>see more</button>
         </div>
       </div>
     </div>

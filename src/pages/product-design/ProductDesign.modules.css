@@ -1,5 +1,5 @@
 .product_design_page {
-    height: 100vh;
+    height: 300vh;
 }
 
 .header_link {
@@ -77,10 +77,11 @@
 }
 
 .tab_content h2 {
-    font-size: 100px;
+    font-size: 96px;
     text-align: left;
     margin: 0px;
     width: 800px;
+    line-height: 1.2;
 }
 
 .tab_content p {
@@ -98,7 +99,7 @@
 
 hr {
     margin-top: 3rem;
-    color: #787878;
+    color: #919191;
 }
 
 .bullet_points {
@@ -122,7 +123,7 @@ hr {
 }
 
 .projects_list {
-    margin-top: 1rem;
+    margin-top: 3rem;
     width: 900px;
     display: flex;
     flex-direction: column;
