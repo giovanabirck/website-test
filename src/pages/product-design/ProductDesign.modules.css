@@ -16,7 +16,7 @@
     width: 100vw;
 }
 
-.navigation {
+/* .navigation {
     width: 20vw;
     display: flex;
     flex-direction: column;
@@ -24,6 +24,20 @@
     margin-left: 10vw;
     margin-top: 3vw;
     margin-bottom: 2vw;
+} */
+
+.navigation {
+    position: sticky;
+    top: 0;
+    background-color: #F8F8F8;
+    z-index: 100;
+    width: 20vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 10vw;
+    padding-top: 3vw;
+    padding-bottom: 2vw;
 }
 
 .navigation h3{
