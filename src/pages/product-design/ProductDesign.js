@@ -29,6 +29,11 @@ function ProductDesign() {
             entertainment industries, I incorporate a holistic approach to my designs. 
             Strong focus on interaction design, strategy and accessibility.
           </p>
+          <ul className='bullet_points'>
+              <li>Vancouver based</li>
+              <li>+5 years of experience</li>
+              <li>B2B & SaaS UX Expertise</li>
+            </ul>
         </div>;
       case 'clients':
         return <div className='tab_content'>
@@ -38,6 +43,11 @@ function ProductDesign() {
             I have the goal of building and optimizing your business digital 
             image through intuitive and beautiful experiences 🔥
           </p>
+          <ul className='bullet_points'>
+              <li>Vancouver based (PST timezone)</li>
+              <li>Cultural Engagement</li>
+              <li>Strategic Creativity</li>
+            </ul>
         </div>;
       default:
         return null;
