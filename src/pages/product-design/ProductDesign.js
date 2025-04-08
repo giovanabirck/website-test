@@ -127,7 +127,25 @@ function ProductDesign() {
               </ul>
             </div>
           </div>
-          <button className='button_all_projects'>see all projects</button>
+          <button className='button_all_projects'>
+            see all projects
+            <svg
+              className="arrow_icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              fill="none"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke="currentColor"
+                strokeWidth="2"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M5 12h14M13 5l7 7-7 7"
+              />
+            </svg>
+          </button>
         </div>
       </div>
 
