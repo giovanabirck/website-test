@@ -17,9 +17,9 @@ function ProductDesign() {
             </p>
             <div className='bullet_points'>
               <p>Vancouver based</p>
-              <p>·</p>
+              <p className='dot'>·</p>
               <p>Empathy-Driven</p>
-              <p>·</p>
+              <p className='dot'>·</p>
               <p>Creative Thinker</p>
             </div>
         </div>;
