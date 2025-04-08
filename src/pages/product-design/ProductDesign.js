@@ -93,7 +93,7 @@ function ProductDesign() {
 
           <div className='projects_list'>
             <div>
-              <img src='/product_design/adp_hr_actions.jp' alt='HR Actions'/>
+              <img src='/product_design/adp_hr_actions.jpg' alt='HR Actions'/>
               <h4>Transforming ADP's HR Actions with a Scalable Design System</h4>
               <ul className='project_details'>
                 <li>shipped</li>

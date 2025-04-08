@@ -118,7 +118,8 @@
     list-style: none;
     padding: 0;
     margin-top: 1rem;
-    font-weight: 600;
+    font-weight: 400;
+    font-style: italic;
     font-size: 16px;
     color: #0F0F0F;
 }
