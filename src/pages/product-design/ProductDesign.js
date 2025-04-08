@@ -15,6 +15,13 @@ function ProductDesign() {
               digital world 🌼 Passionate about building products that help 
               people complete tasks seamlessly and find what they need!
             </p>
+            <div className='bullet points'>
+              <p>Vancouver based</p>
+              <p>·</p>
+              <p>Empathy-Driven</p>
+              <p>·</p>
+              <p>Creative Thinker</p>
+            </div>
         </div>;
       case 'recruiters':
         return <div className='tab_content'>
