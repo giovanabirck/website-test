@@ -30,10 +30,10 @@ function ProductDesign() {
             Strong focus on interaction design, strategy and accessibility.
           </p>
           <ul className='bullet_points'>
-              <li>Vancouver based</li>
-              <li>+5 years of experience</li>
-              <li>B2B & SaaS UX Expertise</li>
-            </ul>
+            <li>Vancouver based</li>
+            <li>+5 years of experience</li>
+            <li>B2B & SaaS UX Expertise</li>
+          </ul>
         </div>;
       case 'clients':
         return <div className='tab_content'>
@@ -44,10 +44,10 @@ function ProductDesign() {
             image through intuitive and beautiful experiences 🔥
           </p>
           <ul className='bullet_points'>
-              <li>Vancouver based (PST timezone)</li>
-              <li>Cultural Engagement</li>
-              <li>Strategic Creativity</li>
-            </ul>
+            <li>Vancouver based (PST timezone)</li>
+            <li>Cultural Engagement</li>
+            <li>Strategic Creativity</li>
+          </ul>
         </div>;
       default:
         return null;
@@ -89,6 +89,18 @@ function ProductDesign() {
 
           <div className="tab-content">
             {renderTabContent()}
+          </div>
+
+          <div className='projects_list'>
+            <div>
+              <img src='/product_design/adp_hr_actions.jp' alt='HR Actions'/>
+              <h4>Transforming ADP's HR Actions with a Scalable Design System</h4>
+              <ul className='project_details'>
+                <li>shipped</li>
+                <li>desktop</li>
+              </ul>
+            </div>
+
           </div>
         </div>
       </div>
