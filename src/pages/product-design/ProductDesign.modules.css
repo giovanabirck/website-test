@@ -204,11 +204,11 @@ hr {
     border-color: #919191;
     border-width: 1px;
     border-radius: 4px;
-    transition: transform 0.8s ease;
+    transition: background-color 0.5s ease, border-color 0.5s ease, transform 0.5s ease;
 }
 
 .button_all_projects:hover { 
     background-color: #E1E1E1;
     border-color: #E1E1E1;
-    border-width: 1px;
+    transform: translateY(-2px)
 }
