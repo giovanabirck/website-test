@@ -76,22 +76,13 @@ function ProductDesign() {
         <div className="content">
 
           <div className="tabs">
-            <button
-              onClick={() => handleTabClick('everyone')}
-              className={activeTab === 'everyone' ? 'active' : ''}
-            >
+          <button onClick={() => setActiveTab('everyone')} className={activeTab === 'everyone' ? 'active' : ''}>
               For Everyone
             </button>
-            <button
-              onClick={() => handleTabClick('recruiters')}
-              className={activeTab === 'recruiters' ? 'active' : ''}
-            >
+            <button onClick={() => setActiveTab('recruiters')} className={activeTab === 'recruiters' ? 'active' : ''}>
               Recruiters
             </button>
-            <button
-              onClick={() => handleTabClick('clients')}
-              className={activeTab === 'clients' ? 'active' : ''}
-            >
+            <button onClick={() => setActiveTab('clients')} className={activeTab === 'clients' ? 'active' : ''}>
               Clients
             </button>
           </div>
