@@ -125,9 +125,9 @@ function ProductDesign() {
         </div>
       </div>
 
-      <div className='footer'>
-        <p>contact@giovanabirck.com</p>
-      </div>
+    <div className='footer'>
+      <p>contact@giovanabirck.com</p>
+    </div>
     </div>
   );
 }
