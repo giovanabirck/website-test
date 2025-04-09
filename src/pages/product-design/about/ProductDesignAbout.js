@@ -5,7 +5,7 @@ function ProductDesignAbout() {
     return (
         <div className="product_design_about">
             <div className="main_container">
-                <div className="navigation">
+                {/* <div className="navigation">
                     <Link to="/product-design/work" className='navigation_link'>
                         <h3>work</h3>
                     </Link>
@@ -21,7 +21,7 @@ function ProductDesignAbout() {
                     <Link to="/product-design/resume" className='navigation_link'>
                         <h3>resume</h3>
                     </Link>
-                </div>
+                </div> */}
             </div>
 
             <div className="content">

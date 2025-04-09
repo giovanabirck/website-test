@@ -10,7 +10,7 @@
     width: 100vw;
     overflow: visible;
 }
-
+/* 
 .navigation {
     position: sticky;
     top: 0;
@@ -60,7 +60,7 @@
     color: #0F0F0F;
     font-weight: 600;
     letter-spacing: normal;
-}
+} */
 
 .content {
     width: 80vw;

@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { Link } from "react-router-dom";
 import './ProductDesign.modules.css';
 
+import Navigation from './navigation/Navigation';
+
 function ProductDesign() {
   const [activeTab, setActiveTab] = useState('everyone');
   const location = useLocation();
@@ -62,7 +64,7 @@ function ProductDesign() {
     <div className="product_design_page">
 
       <div className="main_container">
-        <div className="navigation">
+        {/* <div className="navigation">
           <Link to="/product-design/work" className={`navigation_link ${location.pathname === '/product-design/work' ? 'active' : ''}`}>
             <h3>work</h3>
           </Link>
@@ -78,7 +80,9 @@ function ProductDesign() {
           <Link to="/product-design/resume" className={`navigation_link ${location.pathname === '/product-design/resume' ? 'active' : ''}`}>
             <h3>resume</h3>
           </Link>
-        </div>
+        </div> */}
+
+        <Navigation/>
 
         <div className="content">
 
@@ -134,7 +138,7 @@ function ProductDesign() {
               </ul>
             </div>
           </div>
-          
+
           <button className='button_all_projects'>
             see all projects
             <svg
