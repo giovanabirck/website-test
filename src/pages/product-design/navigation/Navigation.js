@@ -1,43 +1,29 @@
 import React from 'react';
-import { NavLink, useLocation } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import './Navigation.modules.css';
 
 function Navigation() {
     const location = useLocation();
 
+    const isActive = (path) => location.pathname === path ? 'active' : '';
+
     return (
         <div className="navigation">
-            {/* <Link to="/product-design/work" className={`navigation_link ${location.pathname === '/product-design/work' ? 'active' : ''}`}>
+            <Link to="/product-design/work" className={`navigation_link ${isActive('/product-design/work')}`}>
                 <h3>work</h3>
             </Link>
 
-            <Link to="/product-design/about" className={`navigation_link ${location.pathname === '/product-design/about' ? 'active' : ''}`}>
+            <Link to="/product-design/about" className={`navigation_link ${isActive('/product-design/about')}`}>
                 <h3>about</h3>
             </Link>
 
-            <Link to="/product-design/references" className={`navigation_link ${location.pathname === '/product-design/references' ? 'active' : ''}`}>
+            <Link to="/product-design/references" className={`navigation_link ${isActive('/product-design/references')}`}>
                 <h3>references</h3>
             </Link>
 
-            <Link to="/product-design/resume" className={`navigation_link ${location.pathname === '/product-design/resume' ? 'active' : ''}`}>
+            <Link to="/product-design/resume" className={`navigation_link ${isActive('/product-design/resume')}`}>
                 <h3>resume</h3>
-            </Link> */}
-
-            <NavLink to="/product-design/work" activeClassName="active" className="navigation_link">
-                <h3>work</h3>
-            </NavLink>
-
-            <NavLink to="/product-design/about" activeClassName="active" className="navigation_link">
-                <h3>about</h3>
-            </NavLink>
-
-            <NavLink to="/product-design/references" activeClassName="active" className="navigation_link">
-                <h3>references</h3>
-            </NavLink>
-
-            <NavLink to="/product-design/resume" activeClassName="active" className="navigation_link">
-                <h3>resume</h3>
-            </NavLink>
+            </Link>
 
         </div>
     );
