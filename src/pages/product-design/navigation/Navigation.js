@@ -1,5 +1,6 @@
 import React from 'react';
-import { Link, useState } from 'react-router-dom';
+import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './Navigation.modules.css';
 
 function Navigation() {
