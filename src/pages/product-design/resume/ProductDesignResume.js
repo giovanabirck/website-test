@@ -1,29 +1,13 @@
 import { Link } from 'react-router-dom';
 import './ProductDesignResume.modules.css';
 
+import Navigation from '../navigation/Navigation';
+
 function ProductDesignResume() {
     return (
         <div className="product_design_resume">
 
-            <div className="main_container">
-                {/* <div className="navigation">
-                    <Link to="/product-design/work" className='navigation_link'>
-                        <h3>work</h3>
-                    </Link>
-
-                    <Link to="/product-design/about" className='navigation_link'>
-                        <h3>about</h3>
-                    </Link>
-
-                    <Link to="/product-design/references" className='navigation_link'>
-                        <h3>references</h3>
-                    </Link>
-
-                    <Link to="/product-design/resume" className='navigation_link'>
-                        <h3>resume</h3>
-                    </Link>
-                </div> */}
-            </div>
+            <Navigation/>
 
             <div className="content">
                 <h1>Resume 🙂</h1>
