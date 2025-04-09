@@ -6,7 +6,7 @@ import Navigation from './navigation/Navigation';
 
 function ProductDesign() {
   const [activeTab, setActiveTab] = useState('everyone');
-  const location = useLocation();
+  // const location = useLocation();
 
 
   const renderTabContent = () => {
