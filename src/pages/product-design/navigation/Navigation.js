@@ -1,46 +1,25 @@
 import React from 'react';
-import { useState } from 'react';
+// import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './Navigation.modules.css';
 
-function Navigation() {
-    const [activeLink, setActiveLink] = useState('');
-
-    const handleLinkClick = (link) => {
-        setActiveLink(link);
-    };
+function Navigation({ activeTab, activeStyles }) {
 
     return (
         <div className="navigation">
-            <Link
-                to="/product-design/work"
-                className={`navigation_link ${activeLink === 'work' ? 'active' : ''}`}
-                onClick={() => handleLinkClick('work')}
-            >                
+            <Link to="/product-design/work" style={activeTab === 'work' ? activeStyles : {}}> 
                 <h3>work</h3>
             </Link>
  
-            <Link
-                to="/product-design/about"
-                className={`navigation_link ${activeLink === 'about' ? 'active' : ''}`}
-                onClick={() => handleLinkClick('about')}
-            >
+            <Link to="/product-design/about" style={activeTab === 'about' ? activeStyles : {}}>
                 <h3>about</h3>
             </Link>
 
-            <Link
-                to="/product-design/references"
-                className={`navigation_link ${activeLink === 'references' ? 'active' : ''}`}
-                onClick={() => handleLinkClick('references')}
-            >                
+            <Link to="/product-design/references" style={activeTab === 'references' ? activeStyles : {}}>           
                 <h3>references</h3>
             </Link>
 
-            <Link
-                to="/product-design/resume"
-                className={`navigation_link ${activeLink === 'resume' ? 'active' : ''}`}
-                onClick={() => handleLinkClick('resume')}
-            >                
+            <Link to="/product-design/resume" style={activeTab === 'resume' ? activeStyles : {}}>   
                 <h3>resume</h3>
             </Link>
 

@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
+import { useLocation } from 'react-router-dom';
 import { Link } from "react-router-dom";
 import './ProductDesign.modules.css';
 
@@ -6,8 +7,23 @@ import Navigation from './navigation/Navigation';
 
 function ProductDesign() {
   const [activeTab, setActiveTab] = useState('everyone');
-  // const location = useLocation();
+  const location = useLocation();
 
+  const activeStyles = {
+    color: '#0F0F0F',
+    fontWeight: '600',
+    letterSpacing: 'normal',
+    textDecoration: 'underline'
+  };
+
+  useEffect(() => {
+    const path = location.pathname;
+
+    if (path.includes('work')) setActiveTab('work');
+    else if (path.includes('about')) setActiveTab('about');
+    else if (path.includes('references')) setActiveTab('references');
+    else if (path.includes('resume')) setActiveTab('resume');
+  }, [location.pathname]);
 
   const renderTabContent = () => {
     switch (activeTab) {
@@ -82,7 +98,7 @@ function ProductDesign() {
           </Link>
         </div> */}
 
-        <Navigation/>
+        <Navigation activeTab={activeTab} activeStyles={activeStyles} />
 
         <div className="content">
 
