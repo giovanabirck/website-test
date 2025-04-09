@@ -19,9 +19,9 @@ function GraphicDesign() {
           <p>Show your graphic design work here...</p>
         </div>
   
-        <div className="footer">
+        {/* <div className="footer">
           <p>contact@giovanabirck.com</p>
-        </div>
+        </div> */}
       </>
     );
 }

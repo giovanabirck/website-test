@@ -4,28 +4,13 @@
     flex-direction: column;
     justify-content: space-between;
     background-color: #f8f8f8;
-    height: 100vh;
+    height: 92vh;
     width: 100vw;
     font-family: "Plus Jakarta Sans", sans-serif;
     color: #0F0F0F;
     background-image: radial-gradient(#E1E1E1 1px, transparent 1px);
     background-size: 24px 24px;
 }
-  
-/* .header {
-    display: flex;
-    flex-direction: row;
-    gap: 6px;
-    justify-content: flex-start;
-    padding-top: 2vh;
-    margin-left: 10vw;
-    margin-right: 10vw;
-}
-  
-h1 {
-    font-size: 20px;
-    color: #0F0F0F;
-} */
 
 .option {
     display: flex;
@@ -96,15 +81,6 @@ h1 {
     }
 }
   
-.footer {
-    display: flex;
-    flex-direction: row;
-    justify-content:space-between;
-    padding-bottom: 2vh;
-    margin-left: 10vw;
-    margin-right: 10vw;
-    font-size: 16px;
-}
   
 /* MEDIA QUERIES FOR RESPONSIVENESS */
   

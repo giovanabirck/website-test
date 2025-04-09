@@ -18,9 +18,9 @@ function SpatialDesign() {
           <p>Show your spatial design work here...</p>
         </div>
   
-        <div className="footer">
+        {/* <div className="footer">
           <p>contact@giovanabirck.com</p>
-        </div>
+        </div> */}
       </>
     );
 }

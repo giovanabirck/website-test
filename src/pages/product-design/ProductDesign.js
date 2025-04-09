@@ -160,9 +160,9 @@ function ProductDesign() {
         </div>
       </div>
 
-    <div className='footer'>
+    {/* <div className='footer'>
       <p>contact@giovanabirck.com</p>
-    </div>
+    </div> */}
     </div>
   );
 }

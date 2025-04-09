@@ -46,9 +46,9 @@ function ProductDesignReference() {
         </div>
 
 
-        <div className='footer'>
+        {/* <div className='footer'>
             <p>contact@giovanabirck.com</p>
-        </div>
+        </div> */}
     </div>
   );
 }

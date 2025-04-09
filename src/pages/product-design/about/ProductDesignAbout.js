@@ -45,10 +45,10 @@ function ProductDesignAbout() {
         
         </div>
 
-
+{/* 
         <div className='footer'>
             <p>contact@giovanabirck.com</p>
-        </div>
+        </div> */}
     </div>
   );
 }

@@ -17,10 +17,10 @@ function VisualArt() {
           <h2>Visual Art</h2>
           <p>Show your visual art work here...</p>
         </div>
-  
+{/*   
         <div className="footer">
           <p>contact@giovanabirck.com</p>
-        </div>
+        </div> */}
       </>
     );
 }
