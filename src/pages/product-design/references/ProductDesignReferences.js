@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import './ProductDesignReference.modules.css';
+import './ProductDesignReferences.modules.css';
 
 function ProductDesignReference() {
   
