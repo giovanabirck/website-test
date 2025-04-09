@@ -5,7 +5,7 @@ import Navigation from '../navigation/Navigation';
 
 function ProductDesignReference() {
     return (
-        <div className="product_design_reference">
+        <div className="product_design_references">
             
             <Navigation/>
 
