@@ -7,7 +7,11 @@ function ProductDesignAbout() {
     return (
         <div className="product_design_about">
             
-            <Navigation/>
+            {/* <Navigation/> */}
+
+            <Navigation 
+                className="styling_active"
+            />
 
             <div className="content">
                 <h1>About 🙂</h1>
