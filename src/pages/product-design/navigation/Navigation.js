@@ -7,19 +7,19 @@ function Navigation({ activeTab, activeStyles }) {
 
     return (
         <div className="navigation">
-            <Link to="/product-design/work" style={activeTab === 'work' ? activeStyles : {}}> 
+            <Link to="/product-design/work" className={`navigation_link ${isActive('/product-design/work')}`}>
                 <h3>work</h3>
             </Link>
  
-            <Link to="/product-design/about" style={activeTab === 'about' ? activeStyles : {}}>
+            <Link to="/product-design/about" className={`navigation_link ${isActive('/product-design/about')}`}>
                 <h3>about</h3>
             </Link>
 
-            <Link to="/product-design/references" style={activeTab === 'references' ? activeStyles : {}}>           
+            <Link to="/product-design/references" className={`navigation_link ${isActive('/product-design/references')}`}>
                 <h3>references</h3>
             </Link>
 
-            <Link to="/product-design/resume" style={activeTab === 'resume' ? activeStyles : {}}>   
+            <Link to="/product-design/resume" className={`navigation_link ${isActive('/product-design/resume')}`}>
                 <h3>resume</h3>
             </Link>
 
