@@ -57,26 +57,26 @@ const visualArtImages = [
 
 
 const categories = [
-    { 
-        name: "Product Design", 
-        path: "/product-design",
-        images: productDesignImages
-    },
-    { 
-        name: "Graphic Design", 
-        path: "/graphic-design",
-        images: graphicDesignImages
-    },
-    { 
-        name: "Spatial Design", 
-        path: "/spatial-design",
-        images: spatialDesignImages 
-    },
-    { 
-        name: "Visual Art", 
-        path: "/visual-art",
-        images: visualArtImages 
-    },
+  { 
+    name: "Product Design", 
+    path: "/product-design",
+    images: productDesignImages
+  },
+  { 
+    name: "Graphic Design", 
+    path: "/graphic-design",
+    images: graphicDesignImages
+  },
+  { 
+    name: "Spatial Design", 
+    path: "/spatial-design",
+    images: spatialDesignImages 
+  },
+  { 
+    name: "Visual Art", 
+    path: "/visual-art",
+    images: visualArtImages 
+  },
 ];
 
 function getRandomPosition() {
@@ -161,10 +161,6 @@ function Home() {
           ))}
         </div>
       )}
-
-      {/* <div className='footer'>
-        <p>contact@giovanabirck.com</p>
-      </div> */}
 
     </div>
   );

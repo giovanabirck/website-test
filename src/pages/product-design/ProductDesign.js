@@ -9,18 +9,19 @@ function ProductDesign() {
     switch (activeTab) {
       case 'everyone':
         return <div className='tab_content'>
-            <h2>Making things engaging and easy to use</h2>
-            <p>
-              <span>Designer</span> with the goal of creating a more inclusive and beautiful 
-              digital world 🌼 Passionate about building products that help 
-              people complete tasks seamlessly and find what they need!
-            </p>
-            <ul className='bullet_points'>
-              <li>Vancouver based</li>
-              <li>Empathy-Driven</li>
-              <li>Creative Thinker</li>
-            </ul>
+          <h2>Making things engaging and easy to use</h2>
+          <p>
+            <span>Designer</span> with the goal of creating a more inclusive and beautiful 
+            digital world 🌼 Passionate about building products that help 
+            people complete tasks seamlessly and find what they need!
+          </p>
+          <ul className='bullet_points'>
+            <li>Vancouver based</li>
+            <li>Empathy-Driven</li>
+            <li>Creative Thinker</li>
+          </ul>
         </div>;
+
       case 'recruiters':
         return <div className='tab_content'>
           <h2>Designing with innovation and purpose</h2>
@@ -35,6 +36,7 @@ function ProductDesign() {
             <li>B2B & SaaS UX Expertise</li>
           </ul>
         </div>;
+
       case 'clients':
         return <div className='tab_content'>
           <h2>Helping you reach your business goals</h2>
@@ -50,20 +52,12 @@ function ProductDesign() {
           </ul>
         </div>;
       default:
-        return null;
+      return null;
     }
   };
 
   return (
     <div className="product_design_page">
-      {/* <div className="header">
-        <h1>
-          <Link to="/" className="header_link">
-            Giovana Birck
-          </Link>
-        </h1>
-        <h1>/ Product Design</h1>
-      </div> */}
 
       <div className="main_container">
         <div className="navigation">
@@ -160,9 +154,6 @@ function ProductDesign() {
         </div>
       </div>
 
-    {/* <div className='footer'>
-      <p>contact@giovanabirck.com</p>
-    </div> */}
     </div>
   );
 }
