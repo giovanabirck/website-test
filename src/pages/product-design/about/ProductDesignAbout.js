@@ -4,12 +4,12 @@ import './ProductDesignAbout.modules.css';
 function ProductDesignAbout() {
   
   return (
-    <div className="product_design_work">
+    <div className="product_design_about">
         <div className="header">
             <h1>
-            <Link to="/">
-                Giovana Birck
-            </Link>
+                <Link to="/" className="header_link">
+                    Giovana Birck
+                </Link>
             </h1>
             <h1>/ Product Design</h1>
             <h1>/ About</h1>
