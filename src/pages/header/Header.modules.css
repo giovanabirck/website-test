@@ -1,0 +1,30 @@
+.header_link {
+    color: #0F0F0F;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+    justify-content: flex-start;
+    padding-top: 2vh;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    font-size: 20px;
+}
+  
+
+/* .header_link {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+    transition: all 0.2s;
+}
+  
+.header_link:hover {
+    text-decoration: underline;
+    color: #555;
+}
+  
+h1 {
+    padding: 1rem;
+    font-size: 1.25rem;
+} */

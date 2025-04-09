@@ -5,14 +5,14 @@ import './GraphicDesign.modules.css';
 function GraphicDesign() {
     return (
       <>
-        <div className="header">
+        {/* <div className="header">
           <h1>
             <Link to="/" className="header_link">
               Giovana Birck
             </Link>
           </h1>
           <h1>/ Graphic Design</h1>
-        </div>
+        </div> */}
   
         <div className="content">
           <h2>Graphic Design</h2>

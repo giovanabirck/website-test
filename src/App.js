@@ -2,6 +2,8 @@ import logo from './logo.svg';
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import './App.css';
 
+import Header from './pages/header/Header';
+
 import ProductDesign from './pages/product-design/ProductDesign';
 import ProductDesignAbout from './pages/product-design/about/ProductDesignAbout';
 import ProductDesignWork from './pages/product-design/work/ProductDesignWork';
@@ -19,6 +21,7 @@ function App() {
   return (
     <Router>
       <div className="App">
+        <Header/>
         <Routes>
           <Route path="/" element={<Home />} />
 

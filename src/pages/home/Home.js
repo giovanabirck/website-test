@@ -130,41 +130,37 @@ function Home() {
 
   return (
     <div className="Home">
-      <div className='header'>
-        <h1>Giovana Birck</h1>
+      <div className="option">
+        {categories.map((category) => (
+          <Link
+            key={category.name}
+            to={category.path}
+            onMouseEnter={() => setHoveredCategory(category)}
+            onMouseLeave={() => setHoveredCategory(null)}
+            className={hoveredCategory && hoveredCategory.name !== category.name ? "faded" : ""}
+          >
+            <h2>{category.name}</h2>
+          </Link>
+        ))}
       </div>
 
-        <div className="option">
-            {categories.map((category) => (
-                <Link
-                    key={category.name}
-                    to={category.path}
-                    onMouseEnter={() => setHoveredCategory(category)}
-                    onMouseLeave={() => setHoveredCategory(null)}
-                    className={hoveredCategory && hoveredCategory.name !== category.name ? "faded" : ""}
-                >
-                    <h2>{category.name}</h2>
-                </Link>
-            ))}
+      {hoveredCategory && (
+        <div className="image-gallery">
+          {visibleImages.map((img, index) => (
+            <img
+              key={index}
+              src={img.src}
+              alt="popup"
+              className={`popup-image ${img.show ? "show" : ""}`}
+              style={{ 
+                position: "absolute", 
+                left: `${img.position.x}px`, 
+                top: `${img.position.y}px`
+              }}
+            />
+          ))}
         </div>
-
-        {hoveredCategory && (
-            <div className="image-gallery">
-                {visibleImages.map((img, index) => (
-                <img
-                    key={index}
-                    src={img.src}
-                    alt="popup"
-                    className={`popup-image ${img.show ? "show" : ""}`}
-                    style={{ 
-                    position: "absolute", 
-                    left: `${img.position.x}px`, 
-                    top: `${img.position.y}px`
-                    }}
-                />
-                ))}
-            </div>
-        )}
+      )}
 
       <div className='footer'>
         <p>contact@giovanabirck.com</p>

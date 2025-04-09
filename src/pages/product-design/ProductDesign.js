@@ -56,14 +56,14 @@ function ProductDesign() {
 
   return (
     <div className="product_design_page">
-      <div className="header">
+      {/* <div className="header">
         <h1>
           <Link to="/" className="header_link">
             Giovana Birck
           </Link>
         </h1>
         <h1>/ Product Design</h1>
-      </div>
+      </div> */}
 
       <div className="main_container">
         <div className="navigation">

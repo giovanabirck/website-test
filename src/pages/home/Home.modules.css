@@ -12,7 +12,7 @@
     background-size: 24px 24px;
 }
   
-.header {
+/* .header {
     display: flex;
     flex-direction: row;
     gap: 6px;
@@ -25,7 +25,7 @@
 h1 {
     font-size: 20px;
     color: #0F0F0F;
-}
+} */
 
 .option {
     display: flex;

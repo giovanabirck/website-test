@@ -4,10 +4,10 @@
     flex-direction: column;
 }
 
-.header_link {
+/* .header_link {
     color: #0F0F0F;
     text-decoration: none;
-}
+} */
 
 .main_container {
     display: flex;

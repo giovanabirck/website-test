@@ -5,15 +5,19 @@ function ProductDesignWork() {
   
   return (
     <div className="product_design_work">
-        <div className="header">
+        {/* <div className="header">
             <h1>
                 <Link to="/" className="header_link">
                     Giovana Birck
                 </Link>
             </h1>
-            <h1>/ Product Design</h1>
-            <h1>/ Resume</h1>
-        </div>
+            <h1>
+                <Link to="/product-design" className="header_link">
+                    / Product Design
+                </Link>
+            </h1>
+            <h1>/ Work</h1>
+        </div> */}
 
         <div className="main_container">
             <div className="navigation">

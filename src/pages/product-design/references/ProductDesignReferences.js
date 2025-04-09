@@ -5,15 +5,19 @@ function ProductDesignReference() {
   
   return (
     <div className="product_design_reference">
-        <div className="header">
+        {/* <div className="header">
             <h1>
                 <Link to="/" className="header_link">
                     Giovana Birck
                 </Link>
             </h1>
-            <h1>/ Product Design</h1>
+            <h1>
+                <Link to="/product-design" className="header_link">
+                    / Product Design
+                </Link>
+            </h1>
             <h1>/ Reference</h1>
-        </div>
+        </div> */}
 
         <div className="main_container">
             <div className="navigation">
