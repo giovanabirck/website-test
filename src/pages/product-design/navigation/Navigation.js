@@ -1,9 +1,10 @@
 import React from 'react';
-// import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import './Navigation.modules.css';
 
-function Navigation({ activeTab, activeStyles }) {
+function Navigation() {
+    const location = useLocation();
+    const isActive = (path) => location.pathname === path ? 'active' : '';
 
     return (
         <div className="navigation">
