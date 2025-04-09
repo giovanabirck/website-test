@@ -16,19 +16,19 @@ function ProductDesignAbout() {
 
         <div className="main_container">
             <div className="navigation">
-                <Link to="/" className='navigation_link'>
+                <Link to="/product-design/work" className='navigation_link'>
                     <h3>work</h3>
                 </Link>
 
-                <Link to="/">
+                <Link to="/product-design/about" className='navigation_link'>
                     <h3>about</h3>
                 </Link>
 
-                <Link to="/">
+                <Link to="/product-design/references" className='navigation_link'>
                     <h3>references</h3>
                 </Link>
 
-                <Link to="/">
+                <Link to="/product-design/resume" className='navigation_link'>
                     <h3>resume</h3>
                 </Link>
             </div>

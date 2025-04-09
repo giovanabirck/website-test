@@ -85,7 +85,7 @@
     font-size: 16px;
     cursor: pointer;
     width: 120px;
-    letter-spacing: 0.01rem;
+    letter-spacing: 0.03rem;
     background: none;
     border: none;
     padding-bottom: 0.5rem;
@@ -245,6 +245,6 @@ hr {
 }
 
 .button_all_projects:hover { 
-    background-color: #E1E1E1;
-    border-color: #E1E1E1;
+    background-color: #e9e9e9;
+    border-color: #e9e9e9;
 }
