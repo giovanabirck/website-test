@@ -1,8 +1,7 @@
 .header_link {
     color: #0F0F0F;
     text-decoration: none;
-    margin-left: 10vw;
-    margin-right: 10vw;
+    margin-left: 1vw;
 }
 
 h1 {
@@ -10,21 +9,7 @@ h1 {
     flex-direction: row;
     gap: 1rem;
     font-size: 20px;
+    margin-top: 1vh;
+    margin-left: 9vw;
+    margin-right: 10vw;
 }
-
-span { 
-    width: 100%;
-}
-  
-
-/* .header_link {
-    text-decoration: none;
-    color: black;
-    font-weight: 500;
-    transition: all 0.2s;
-}
-  
-.header_link:hover {
-    text-decoration: underline;
-    color: #555;
-} */
