@@ -4,6 +4,8 @@ import './ProductDesign.modules.css';
 
 function ProductDesign() {
   const [activeTab, setActiveTab] = useState('everyone');
+  const location = useLocation();
+
 
   const renderTabContent = () => {
     switch (activeTab) {
@@ -61,19 +63,19 @@ function ProductDesign() {
 
       <div className="main_container">
         <div className="navigation">
-          <Link to="/product-design/work" className='navigation_link'>
+          <Link to="/product-design/work" className={`navigation_link ${location.pathname === '/product-design/work' ? 'active' : ''}`}>
             <h3>work</h3>
           </Link>
 
-          <Link to="/product-design/about" className='navigation_link'>
+          <Link to="/product-design/about" className={`navigation_link ${location.pathname === '/product-design/about' ? 'active' : ''}`}>
             <h3>about</h3>
           </Link>
 
-          <Link to="/product-design/references" className='navigation_link'>
+          <Link to="/product-design/references" className={`navigation_link ${location.pathname === '/product-design/references' ? 'active' : ''}`}>
             <h3>references</h3>
           </Link>
 
-          <Link to="/product-design/resume" className='navigation_link'>
+          <Link to="/product-design/resume" className={`navigation_link ${location.pathname === '/product-design/resume' ? 'active' : ''}`}>
             <h3>resume</h3>
           </Link>
         </div>
@@ -132,6 +134,7 @@ function ProductDesign() {
               </ul>
             </div>
           </div>
+          
           <button className='button_all_projects'>
             see all projects
             <svg
