@@ -137,6 +137,8 @@ hr {
 .image_wrapper {
     overflow: hidden;
     border-radius: 8px;
+    border: solid 1px #acacac;;
+    height: 350px;
 }
 
 .project:hover img {

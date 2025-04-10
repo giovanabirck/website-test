@@ -110,7 +110,7 @@ function ProductDesign() {
 
             <div className='project'>
               <div className='image_wrapper'>
-                <img src='/product_design/adp_hr_actions.jpg' alt='HR Actions'/>
+                <img src='/product_design/adp_ttd.png' alt='HR Actions'/>
               </div>
               <h4>Improving Usability in MyADP's Task Management Tool, Things to Do</h4>
               <ul className='project_details'>
