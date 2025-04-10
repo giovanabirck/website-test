@@ -99,7 +99,7 @@ function ProductDesign() {
 
             <div className='project'>
               <div className='image_wrapper'>
-                <img src='/product_design/adp_hr_actions.jpg' alt='HR Actions'/>
+                <img src='/product_design/nomadago_rec.png' alt='HR Actions'/>
               </div>
               <h4>Enhancing the Nomadic Experience with Network Recommendations</h4>
               <ul className='project_details'>
