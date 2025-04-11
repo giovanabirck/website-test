@@ -13,8 +13,8 @@
 
 .content {
     width: 80vw;
-    margin-right: 10vw;
-    margin-top: 3vw;
+    margin-right: 13vw;
+    margin-top: 3.5vw;
     margin-bottom: 2vw;
 }
 
@@ -65,18 +65,18 @@
 }
 
 .tab_content h2 {
-    font-size: 96px;
+    font-size: 88px;
     text-align: left;
     margin: 0px;
-    width: 800px;
-    line-height: 1.2;
+    width: 700px;
+    line-height: 1.15;
 }
 
 .tab_content p {
-    font-size: 20px;
+    font-size: 18px;
     text-align: left;
     line-height: 1.8;
-    width: 700px;
+    width: 600px;
 }
 
 .tab_content span {
@@ -85,12 +85,14 @@
     padding: 0.1em 0.3em 0.1em 0.3em;
 }
 
-hr {
+/* hr {
     margin-top: 3rem;
     border-style: solid;
     border-width: 0.5px;
     border-color: #acacac;
-}
+    width: 800px;
+    margin-left: 0px;
+} */
 
 .bullet_points {
     display: flex;
@@ -124,6 +126,7 @@ hr {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    margin-top: 5vh;
 }
 
 .project img {
@@ -139,6 +142,7 @@ hr {
     border-radius: 8px;
     border: solid 1px #acacac;;
     height: 350px;
+    width: 700px;
 }
 
 .project:hover img {
@@ -148,17 +152,18 @@ hr {
 .project h4 {
     font-size: 18px;
     text-align: left;
-    margin-top: 0.8rem;
+    margin-top: 0.7rem;
     margin-bottom: 0rem;
+    font-weight: 500;
 }
 
 .project_details {
     display: flex;
-    gap: 1rem;
+    gap: 0.5rem;
     list-style: none;
     padding: 0;
     margin-top: 0.5rem;
-    font-weight: 400;
+    font-weight: 300;
     font-style: italic;
     font-size: 16px;
     color: #0F0F0F;
@@ -166,7 +171,7 @@ hr {
   
 .project_details li::after {
     content: '·';
-    margin-left: 1rem;
+    margin-left: 0.5rem;
 }
   
 .project_details li:last-child::after {
@@ -177,8 +182,8 @@ hr {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 900px;
-    font-size: 18px;
+    width: 700px;
+    font-size: 16px;
     padding: 14px 12px;
     margin-top: 2rem;
     margin-bottom: 1rem;

@@ -83,7 +83,7 @@ function ProductDesign() {
             {renderTabContent()}
           </div>
 
-          <hr/>
+          {/* <hr/> */}
 
           <div className='projects_list'>
             <div className='project'>
@@ -125,8 +125,8 @@ function ProductDesign() {
             <svg
               className="arrow_icon"
               xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
+              width="20"
+              height="20"
               fill="none"
               viewBox="0 0 24 24"
             >
